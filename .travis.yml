@@ -1,0 +1,18 @@
+language: java
+
+before_install:
+  # download the latest Android SDK and extract
+  - wget http://dl.google.com/android/android-sdk_r21.1-linux.tgz
+  - tar -zxf android-sdk_r21.1-linux.tgz
+  - export ANDROID_HOME=`pwd`/android-sdk-linux
+  - export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
+  # only update the sdk for the tools and platform-tools (1,2) and whatever API level
+  # Android list sdk number 9 = 2.3.3 (API level 10)
+  # Assume number 4 = 4.2.2 (API level 17) is already installed
+  - android update sdk --filter 1,2,9 --no-ui --force
+
+before_script:
+  - ls -la
+  - ls -la android-sdk-linux
+  - ls -la android-sdk-linux/tools
+  - ls -la android-sdk-linux/platform-tools
