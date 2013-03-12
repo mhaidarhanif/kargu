@@ -7,7 +7,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.mhaidarhanif.android.kargu</groupId>
     <artifactId>kargu</artifactId>
-    <version>0.0-SNAPSHOT</version>
+    <version>0.1-SNAPSHOT</version>
     <packaging>apk</packaging>
     <name>Kargu</name>
     <url>https://github.com/mhaidarh/kargu/</url>
