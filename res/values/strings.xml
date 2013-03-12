@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Kargu</string>
+	<string name="edition_name">Listrik</string>
+	<string name="welcome">Selamat Datang!</string>
+	<string name="action_settings">Settings</string>
+
+</resources>

@@ -1,0 +1,159 @@
+Kargu
+=====
+
+Dokumentasi Kargu (lang=id-ID)
+
+[![Logo Kargu](https://raw.github.com/mhaidarh/kargu/master/res/drawable/ic_launcher.png)](https://github.com/mhaidarh/kargu/ "Logo Kargu Berwarna")
+[![Status Buat](https://secure.travis-ci.org/mhaidarh/kargu.png)](http://travis-ci.org/mhaidarh/kargu/ "Status pembuatan dari Travis CI")
+
+```
+nama = Kargu
+edisi = Listrik
+deskripsi singkat = Kalkulator Perkiraan Penggunaan Energi Listrik
+deskripsi pendek = Kargu adalah aplikasi kalkulator untuk menghitung perkiraan penggunaan energi listrik dengan aturan biaya prabayar dan pascabayar PLN.
+deskripsi panjang = baca penjelasan berikut
+```
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+Deksripsi
+---------
+
+**Kar·gu** /kargu/ _n_
+
+Kargu, disingkat dari [Ka]lkulator Perki[r]aan Peng[gu]naan, adalah penyesuaian pendekatan ketetapan biaya oleh PLN dan undang-undang yang berlaku. Bermula dari keraguan pada kala ingin membeli dan alat elektronik baru, perlu tahu tagihan yang akan didapat nantinya jika pascabayar atau pulsa yang harus disiapkan jika prabayar.
+
+Pada awalnya bertujuan utama untuk memperkiraan dengan perhitungan terdekat, sehingga belum menggunaan pendekatan simulasi secara nyata. Akan dilengkapi dengan ekstensi/perluasan pengetahuan budaya nasional (Indonesia) dalam penggunaan listrik sehari-hari di berbagai tempat, golongan, dan kegunaan. Masih dibuat khusus untuk penggunaan energi listrik dan amat sederhana. Tapi jika diperlukan dapat diperluas dengan energi bahan bakar minyak, gas, dan lain-lain.
+
+Kemampuan dan nilai masih dibatasi oleh informasi perhitungan dari PLN dan pemerintah yang belum terbuka dan diketahui secara mudah untuk publik. Sehingga sebagian besar menggunakan perkiraan terdekat yang umumnya dipakai. Juga memang saat ini belum ada pemilihan golongan tarif dengan simbol, untuk mempercepat pengembangan awal. Lagipula akan lebih memudahkan pengguna untuk memulai tanpa harus mengetahui.
+
+Dibuat berdasarkan pengalaman akan keraguan perhitungan untuk memperkirakan biaya dari penggunaan listrik secara manual. Sebagian besar pengguna atau pelanggan listrik ingin mengetahui dan seharusnya mengetahui lebih mengenai tagihan atau biaya yang perlu disiapkan per bulan tanpa harus berada pada kondisi setelah satu bulan pemakaian listrik. Sehingga bisa menjadi alternatif untuk mengatasi keraguan jika terdapat alat elektronik baru dalam lingkungan yang digunakan. Perlu diketahui bahwa ini masih dalam tahap eksperimen dan bertujuan utama untuk edukasi karena berawal dari tugas pembelajaran.
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+Log Perubahan
+-------------
+
+0.0
+
+-  Membuat skema dan desain dasar
+-  Mengumpulkan informasi dan bahan
+-  Menambah [README](/README.mkd), [LICENSE](/LICENSE), dan [INSTALL](/INSTALL)
+-  Spesifikasi platform
+   - minimum API level 10r2, versi 2.3.3 Gingerbread
+   - maksimum API level 16r4, versi 4.1.2 Jelly Bean
+-  Inisialiasi proyek dengan [Apache Maven™ 3.0.5](http://maven.apache.org) dan [Apache Ant™ 1.9.0](http://ant.apache.org)
+-  Ditambah dengan [Android Maven Plugin 3.5.1](https://maven-android-plugin.googlecode.com)
+-  Inisialisasi konfigurasi untuk [Jetbrains](http://jetbrains.org) [IntelliJ IDEA 12 CE](http://jetbrains.com/idea/)
+
+x.x (TODO)
+
+-  Menggunakan pedoman konvensi gaya kode
+   -  [Oracle Code Conventions for the Java Programming Language](http://oracle.com/technetwork/java/codeconv-138413.html)
+   -  [Google Code Style Guide](http://google-styleguide.googlecode.com)
+-  Perhitungan dasar
+-  Layar muka / _splash screen_ sederhana
+-  Antarmuka pengguna / _user interface_ dengan [HoloEverywhere](http://holoeverywhere.org) dan [ActionBarSherlock](http://actionbarsherlock.com)
+-  Aset visual tambahan
+-  Mengadakan
+   -  perihal aplikasi
+   -  bantuan pengguna
+   -  pengaturan pengguna
+-  Menggunakan Integrasi Kontinu ([Continuous Integration (CI)](http://en.wikipedia.org/wiki/Continuous_integration)) [Travis-CI](https://travis-ci.org).
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+Alur Skema
+----------
+
+### Skema Simulasi Listrik oleh PLN
+
+Simulasi yang diberikan oleh Perusahaan Listrik Negara (PLN) yaitu [Simulasi Listrik](http://www.pln.co.id/simulasi/tagihan/index.php) memerlukan data pelanggan listrik pascabayar dan hanya dapat mengambil masukan berupa: 
+
+*  golongan tarif tanpa simbol
+*  batas daya dalam volt ampere (VA)
+*  jumlah pemakaian dalam kiloWatt per jam (kWh)
+
+Lalu memberikan keluaran berupa:
+
+*  biaya beban dalam kilovolt ampere per bulan (kVA/bulan)
+*  biaya abonemen dalam Rupiah (Rp)
+*  jumlah pemakaian dalam kiloWatt per jam (kWh)
+*  biaya beban dalam Rupiah (Rp)
+*  biaya total dalam Rupiah (Rp)
+
+Di akhir pengguna bisa melakukan perhitungan ulang. Kemungkinan tidak adanya kostumisasi adalah saat itu belum banyak yang menggunakan listrik prabayar.
+
+### Skema Perkiraan oleh Kargu
+
+Inti penyelesaian agak berbeda dengan simulasi biaya oleh PLN atau tabel perhitungan lainnya. Dimana pada umumnya memerlukan informasi penggunaan per bulan yang sudah berlalu (untuk pelanggan listrik pascabayar), sedangkan aplikasi ini hanya memerlukan informasi umum yang telah diketahui secara mudah, baik pelanggan listrik prabayar atau pascabayar, yaitu:
+
+*  daya listrik rumah atau tempat tinggal
+*  beberapa alat elektronik yang sudah diketahui atau akan dipakai,
+*  jenis alat elektronik, atau
+*  daya yang dibutuhkan dan waktu penggunaannya berdasarkan perkiraan maksimum
+
+Masukan menjadi seperti:
+
+**Tabel Masukan**
+
+| Variabel     | Ukuran      | Nilai | Blok    |
+| ------------ |:-----------:| -----:| ------- |
+| Daya Listrik | Volt Ampere |  2200 | Pickers |
+| Elektronik   | Watt        |   100 | Text    |
+|              | Jam         |    24 | Pickers |
+
+Hasilnya adalah informasi detail mengenai:
+
+*  perbandingan budaya penggunaan daya listrik dengan daerah sekitar,
+*  daftar alat elektronik dan atributnya, serta
+*  beberapa nilai Watt, kWh, biaya, harga, tagihan, pajak, dan total biaya yang sebaiknya disiapkan; dalam ukuran waktu jam, harian, dan bulanan.
+
+Keluaran menjadi seperti:
+
+**Tabel Hitung**
+
+| Variabel     | Ukuran      | Nilai |
+| ------------ |:-----------:| -----:|
+| Daya Listrik | Volt Ampere |  2200 |
+| Elektronik   | Watt        |   100 |
+|              | Jam         |    24 |
+|              | Watt/Jam    |  2400 |
+| ------------ |:-----------:| -----:|
+| Total        | Watt/Jam    |   100 |
+| Pengunaan    | Watt/Hari   |  2400 |
+|              | kWh/Hari    |   2.4 |
+|              | kWh/Bulan   |  72.0 |
+
+**Tabel Biaya**
+
+| Variabel           | Ukuran      | Nilai  |
+| ------------------ |:-----------:| ------:|
+| Biaya Langganan    | Rupiah      |  59400 |
+| Harga/kWh          | Rupiah      |    650 |
+| Biaya/Bulan xPajak |             |        |
+|    Prabayar        | Rupiah      |  46800 |
+|    Pascabayar      | Rupiah      | 106200 |
+| Pajak/Bulan        | Persen      |     10 |
+| ------------------ |:-----------:| ------:|
+| Biaya/Bulan        | Rupiah      |        |
+|    Prabayar        | Rupiah      |  51480 |
+|    Pascabayar      | Rupiah      | 116820 |
+
+Di akhir pengguna bisa melakukan perhitungan ulang. Dan rencananya bisa menyimpan data masukan dan hasil laporan yang didapat.
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+Sumber, Lisensi, dan Kredit
+---------------------------
+
+Repositori [Kargu di GitHub](https://github.com/mhaidarh/kargu).
+
+Dibuat awal oleh [M Haidar Hanif](AUTHORS).
+
+Kode sumber dirilis di bawah [Lisensi MIT](LICENSE).
+
+Berkas gambar, visual, dan suara dirilis di bawah lisensi [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported](http://creativecommons.org/licenses/by-nc-sa/3.0/).
+
+Bahan yang belum disebutkan di sini terdapat di [berkas pengembangan](misc/docs/development.mkd).
+
