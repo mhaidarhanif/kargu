@@ -37,6 +37,7 @@ target/
 .classpath
 .project
 .settings
+.metadata
 
 # Generated ProGuard folder
 proguard/
