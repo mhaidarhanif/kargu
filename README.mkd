@@ -1,6 +1,7 @@
 Kargu
 =====
 
+
 Dokumentasi Kargu (lang=id-ID)
 
 [![Logo Kargu](https://raw.github.com/mhaidarh/kargu/master/res/drawable/ic_launcher.png)](https://github.com/mhaidarh/kargu/ "Logo Kargu Berwarna")
@@ -8,20 +9,21 @@ Dokumentasi Kargu (lang=id-ID)
 
 ```
 nama = Kargu
-edisi = Listrik
-deskripsi singkat = Kalkulator Perkiraan Penggunaan Energi Listrik
-deskripsi pendek = Kargu adalah aplikasi kalkulator untuk menghitung perkiraan penggunaan energi listrik dengan aturan biaya prabayar dan pascabayar PLN.
-deskripsi panjang = baca penjelasan berikut
+subnama = Kalkulator Perkiraan Penggunaan Energi Listrik
+deskripsi pendek = Kargu adalah aplikasi kalkulator untuk memperkiraan penggunaan energi listrik yang bisa untuk variasi pelanggan prabayar atau pascabayar serta mencanangkan budaya hemat energi dengan aturan biaya oleh PLN.
+deskripsi panjang = (baca penjelasan di bawah)
 ```
 
+
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
 
 Deksripsi
 ---------
 
 **Kar·gu** /kargu/ _n_
 
-Kargu, disingkat dari [Ka]lkulator Perki[r]aan Peng[gu]naan, adalah penyesuaian pendekatan ketetapan biaya oleh PLN dan undang-undang yang berlaku. Bermula dari keraguan pada kala ingin membeli dan alat elektronik baru, perlu tahu tagihan yang akan didapat nantinya jika pascabayar atau pulsa yang harus disiapkan jika prabayar.
+Kargu, disingkat dari [Ka]lkulator Perki[r]aan Peng[gu]naan, adalah aplikasi kalkulator sederhana dengan penyesuaian pendekatan ketetapan biaya oleh PLN dan undang-undang yang berlaku. Bermula dari keraguan pada kala ingin membeli dan alat elektronik baru, perlu tahu tagihan yang akan didapat nantinya jika pascabayar atau pulsa yang harus disiapkan jika prabayar.
 
 Pada awalnya bertujuan utama untuk memperkiraan dengan perhitungan terdekat, sehingga belum menggunaan pendekatan simulasi secara nyata. Akan dilengkapi dengan ekstensi/perluasan pengetahuan budaya nasional (Indonesia) dalam penggunaan listrik sehari-hari di berbagai tempat, golongan, dan kegunaan. Masih dibuat khusus untuk penggunaan energi listrik dan amat sederhana. Tapi jika diperlukan dapat diperluas dengan energi bahan bakar minyak, gas, dan lain-lain.
 
@@ -29,10 +31,19 @@ Kemampuan dan nilai masih dibatasi oleh informasi perhitungan dari PLN dan pemer
 
 Dibuat berdasarkan pengalaman akan keraguan perhitungan untuk memperkirakan biaya dari penggunaan listrik secara manual. Sebagian besar pengguna atau pelanggan listrik ingin mengetahui dan seharusnya mengetahui lebih mengenai tagihan atau biaya yang perlu disiapkan per bulan tanpa harus berada pada kondisi setelah satu bulan pemakaian listrik. Sehingga bisa menjadi alternatif untuk mengatasi keraguan jika terdapat alat elektronik baru dalam lingkungan yang digunakan. Perlu diketahui bahwa ini masih dalam tahap eksperimen dan bertujuan utama untuk edukasi karena berawal dari tugas pembelajaran.
 
-*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+Kode sumber aplikasi ini dirilis secara terbuka (_open source_) di [GitHub](https://github.com/mhaidarh/kargu).
+
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
 
 Log Perubahan
 -------------
+
+0.1-0.8
+
+-  Dirilis awal sebagai Energy Usage Calculator (EUC)
+-  Dirilis ulang sebagai [Kargupy](https://github.com/mhaidarh/kargupy)
 
 0.0
 
@@ -65,7 +76,9 @@ x.x (TODO)
    -  pengaturan pengguna
 -  Menggunakan Integrasi Kontinu ([Continuous Integration (CI)](http://en.wikipedia.org/wiki/Continuous_integration)) [Travis-CI](https://travis-ci.org).
 
+
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
 
 Alur Skema
 ----------
@@ -144,18 +157,68 @@ Keluaran menjadi seperti:
 
 Di akhir pengguna bisa melakukan perhitungan ulang. Dan rencananya bisa menyimpan data masukan dan hasil laporan yang didapat.
 
+
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+
+Spesifikasi Lain
+----------------
+
+```
+Judul       : Kargu, kalkulator untuk memperkiraan penggunaan energi listrik serta mencanangkan budaya hemat energi
+Tanggal     : 2013-03-XX XX:XX:XX
+Foto Produk : ./screen/kargu_x.x_screen-hr.png
+Berkas APK  : ./bin/Kargu_x.x.apk
+Kategori    : Energi, Edukasi, Budaya
+```
+
+Bisa untuk variasi pelanggan prabayar atau pascabayar serta mencanangkan budaya hemat energi dengan aturan biaya oleh PLN .
+
+### Tips hemat energi
+
+-  Membuat kebiasaan hemat energi menjadi budaya indonesia
+-  Membiasakan mengecek meteran secara berkala
+-  Menyiapkan pulsa/token listrik untuk berjaga-jaga bagi pelanggan listrik prabayar
+-  Menghindari biaya keterlambatan (BK) dengan bersiap setiap bulan atau beralih ke langganan listrik prabayar
+-  Menghindari penyalahgunaan listrik oleh orang lain P2TL adalah singkatan dari 
+-  Mengotomatisasi alat elektronik dengan menjadwalkan proses. Seperti di komputer atau ponsel yang terdapat aplikasi untuk menjadwalkan kapan sistemnya akan dihibernasi (_hibernate_) atau dimatikan (_shut down_) secara otomatis setelah pemakaian tertentu. Sehingga baterai dan penggunaan energi lebih irit.
+-  Mencegah putusya arus listrik secara tiba-tiba dengan mengetahui batas daya listrik
+-  Mengetahui adanya Penertiban Pemakaian Tenaga Listrik (P2TL)
+-  Mengetahui adanya Hari Listrik Nasional (HLN) setiap tanggal 27 Oktober
+
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
 
 Sumber, Lisensi, dan Kredit
 ---------------------------
 
+### Pengembangan
+
 Repositori [Kargu di GitHub](https://github.com/mhaidarh/kargu).
 
-Dibuat awal oleh [M Haidar Hanif](AUTHORS).
+Repositori [Kargupy di GitHub](https://github.com/mhaidarh/kargupy).
+
+Dibuat awal oleh [M Haidar Hanif](https://github.com/mhaidarh). Lengkapnya silakan baca berkas [AUTHORS](AUTHORS).
+
+### Lisensi
 
 Kode sumber dirilis di bawah [Lisensi MIT](LICENSE).
 
 Berkas gambar, visual, dan suara dirilis di bawah lisensi [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported](http://creativecommons.org/licenses/by-nc-sa/3.0/).
 
+### Daftar Berita
+
+-  [Catatan Hari Listrik Nasional Ke-67](http://finance.detik.com/read/2012/10/27/121041/2073884/1034/catatan-hari-listrik-nasional-ke-67)
+-  [Budaya Penggunaan Listrik yang Baik Karena Pengetahuan yang Baik](http://id.shvoong.com/writing-and-speaking/presenting/2160587-budaya-penggunaan-listrik-yang-baik/)
+-  [Budaya Hemat Energi Menjaga Kelangsungan Kelistrikan Nasional](http://palembang.tribunnews.com/m/index.php/08/03/2011/budaya-hemat-energi--menjaga-kelangsungan-kelistrikan-nasional)
+
 Bahan yang belum disebutkan di sini terdapat di [berkas pengembangan](misc/docs/development.mkd).
 
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+
+*[KARGU]: Kalkulator Perkiraan Penggunaan
+*[P2TL]: Penertiban Pemakaian Tenaga Listrik
+*[HLN]: Hari Listrik Nasional
