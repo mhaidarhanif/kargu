@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="app_name">Kargu</string>
-	<string name="edition_name">Listrik</string>
-	<string name="welcome">Selamat Datang!</string>
-	<string name="action_settings">Settings</string>
+    <string name="app_name">Kargu</string>
+    <string name="edition_name">Listrik</string>
+    <string name="appedition_name">Kargu Listrik</string>
+    <string name="app_version">Versi 0.1</string>
+    <string name="app_tagline">Memperkirakan biaya penggunaan tanpa ragu</string>
+
+    <string name="settings_title">Pengaturan Lengkap</string>
+    <string name="action_settings">Pengaturan</string>
+
+    <string name="help_title">Bantuan Penggunaan</string>
+    <string name="button_help">Bantuan</string>
+    <string name="action_help">Bantuan</string>
+    <string name="help_dialog">Masukkan data mengenai daya listrik Anda</string>
+
+    <string name="about_title">Tentang Aplikasi</string>
+    <string name="button_about">Tentang</string>
+    <string name="action_about">Tentang</string>
+    <string name="about_dialog">Dibuat oleh M Haidar Hanif (mhaidarhanif@gmail.com)\n@mhaidarh / @mhaidarh_id\nhttp://gplus.to/mhaidarhanif</string>
+
+    <string name="button_close">Tutup</string>
 
 </resources>
