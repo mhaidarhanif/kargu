@@ -13,7 +13,7 @@
     <url>https://github.com/mhaidarh/kargu/</url>
 
     <properties>
-        <platform.version> 2.3.3
+        <platform.version> 4.1.1.4
         </platform.version>
     </properties>
 
@@ -23,6 +23,11 @@
             <artifactId>android</artifactId>
             <version>${platform.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.android</groupId>
+            <artifactId>support-v4</artifactId>
+            <version>r7</version>
         </dependency>
     </dependencies>
 

@@ -1,16 +1,23 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/light_gray"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_gray"
-    android:padding="8dip"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
     >
+
+    <!-- Title Area -->
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/appedition_name"
+        android:text="@string/name_appedition"
         android:gravity="center_horizontal"
         android:textStyle="bold"
         android:textSize="@dimen/font_large"
@@ -18,35 +25,50 @@
         android:paddingBottom="16dip"
         />
 
-    <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context=".MainActivity" >
+    <!-- Input Area -->
 
-        <Button
-            android:id="@+id/button_help"
-            android:layout_width="wrap_content"
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dip"
+        >
+
+        <EditText
+            android:id="@+id/edit_inputNumber"
+            android:hint="@string/edit_inputNumber"
+            android:layout_weight="1"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/button_help"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentTop="true"
-            android:onClick="openDialog"
             />
 
         <Button
-            android:id="@+id/button_about"
+            android:id="@+id/button_getNumber"
+            android:text="@string/button_getInput"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/button_about"
+            android:onClick="getNumber"
+            />
+
+    </LinearLayout>
+
+    <!-- Additionals -->
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:id="@+id/button_reset"
+            android:text="@string/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/button_help"
-            android:onClick="openDialog"
+            android:layout_alignParentTop="true"
             />
 
     </RelativeLayout>

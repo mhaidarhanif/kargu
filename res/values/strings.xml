@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources>
 
-    <string name="app_name">Kargu</string>
-    <string name="edition_name">Listrik</string>
-    <string name="appedition_name">Kargu Listrik</string>
-    <string name="app_version">Versi 0.1</string>
-    <string name="app_tagline">Memperkirakan biaya penggunaan tanpa ragu</string>
+    <string name="name_app">Kargu</string>
+    <string name="name_edition">Listrik</string>
+    <string name="name_appedition">Kargu Listrik</string>
+    <string name="version_app">Versi 0.1</string>
+    <string name="tagline_app">Memperkirakan biaya penggunaan tanpa ragu</string>
 
-    <string name="settings_title">Pengaturan Lengkap</string>
+    <string name="title_number">Angka yang diambil</string>
+
+    <string name="title_settings">Pengaturan Lengkap</string>
     <string name="action_settings">Pengaturan</string>
 
-    <string name="help_title">Bantuan Penggunaan</string>
+    <string name="title_help">Bantuan Penggunaan</string>
     <string name="button_help">Bantuan</string>
     <string name="action_help">Bantuan</string>
-    <string name="help_dialog">Masukkan data mengenai daya listrik dan alat elektronik yang akan Anda gunakan</string>
+    <string name="dialog_help">Masukkan data mengenai daya listrik dan alat elektronik yang akan Anda gunakan</string>
 
-    <string name="about_title">Tentang Aplikasi</string>
+    <string name="title_about">Tentang Aplikasi</string>
     <string name="button_about">Tentang</string>
     <string name="action_about">Tentang</string>
-    <string name="about_dialog">Kargu Listrik, memperkirakan biaya penggunaan listrik tanpa ragu dan membudayakan hemat energi</string>
+    <string name="dialog_about">Kargu Listrik, memperkirakan biaya penggunaan listrik tanpa ragu serta membudayakan hemat energi</string>
 
     <string name="button_close">Tutup</string>
+
+    <string name="edit_inputNumber">0</string>
+    <string name="button_getInput">Ambil</string>
+    <string name="button_reset">Kosongkan</string>
 
 </resources>
