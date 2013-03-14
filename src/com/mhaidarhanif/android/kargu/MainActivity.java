@@ -10,7 +10,7 @@ import android.widget.EditText;
 public class MainActivity extends Activity {
 
   // For complete title purpose, will be used later
-  // String appEditionName = getString(R.string.app_name) + " " + getString(R.string.edition_name);
+  // String appEditionName = getString(R.string.app_name) + " " + getString(R.string.name_edition);
 
   public final static String EXTRA_NUMBER = "com.mhaidarhanif.android.kargu.NUMBER";
 

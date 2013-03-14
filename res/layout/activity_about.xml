@@ -11,7 +11,7 @@
 
     <TextView
         android:id="@+id/about_title"
-        android:text="@string/about_title"
+        android:text="@string/title_about"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -21,7 +21,7 @@
         />
 
     <TextView
-        android:text="@string/about_dialog"
+        android:text="@string/dialog_about"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"

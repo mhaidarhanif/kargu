@@ -13,12 +13,12 @@
         android:debuggable="true"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
+        android:label="@string/name_app"
         android:theme="@style/AppTheme">
 
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"
+            android:label="@string/name_app"
             android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +28,7 @@
 
         <activity
             android:name=".AboutDialogActivity"
-            android:label="@string/about_title"
+            android:label="@string/title_about"
             android:theme="@android:style/Theme.Dialog">
         </activity>
 
