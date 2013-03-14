@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources>
 
     <string name="app_name">Kargu</string>
@@ -18,8 +19,12 @@
     <string name="about_title">Tentang Aplikasi</string>
     <string name="button_about">Tentang</string>
     <string name="action_about">Tentang</string>
-    <string name="about_dialog">Kargu Listrik, memperkirakan biaya penggunaan listrik tanpa ragu dan membudayakan hemat energi</string>
+    <string name="about_dialog">Kargu Listrik, memperkirakan biaya penggunaan listrik tanpa ragu serta membudayakan hemat energi</string>
 
     <string name="button_close">Tutup</string>
+
+    <string name="edit_inputNumber">0</string>
+    <string name="button_getInput">Ambil</string>
+    <string name="button_reset">Kosongkan</string>
 
 </resources>
