@@ -220,7 +220,7 @@ Bahan, referensi, atau tautan yang belum disebutkan di sini terdapat di [berkas 
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 
 
-*[KARGU]: Kalkulator Perkiraan Penggunaan
-*[P2TL]: Penertiban Pemakaian Tenaga Listrik
-*[HLN]: Hari Listrik Nasional
-*[MIT]: Massachusetts Institute of Technology
+*  [KARGU]: Kalkulator Perkiraan Penggunaan
+*  [P2TL]: Penertiban Pemakaian Tenaga Listrik
+*  [HLN]: Hari Listrik Nasional
+*  [MIT]: Massachusetts Institute of Technology
