@@ -52,7 +52,7 @@ Kargu 0.0
 -  Membuat skema dan desain dasar
 -  Mengumpulkan informasi dan bahan
 -  Menambah [README](/README.mkd), [LICENSE](/LICENSE), dan [INSTALL](/INSTALL)
--  Spesifikasi platform
+-  Spesifikasi platform:
    - minimum API level 10r2, versi 2.3.3 [Gingerbread](http://developer.android.com/about/versions/android-2.3-highlights.html)
    - maksimum API level 16r4, versi 4.1.2 [Jelly Bean](http://developer.android.com/about/versions/jelly-bean.html)
 -  Inisialiasi proyek dengan [Apache Maven™ 3.0.5](http://maven.apache.org) dan [Apache Ant™ 1.9.0](http://ant.apache.org)
@@ -177,15 +177,16 @@ Kategori    : Energi, Edukasi, Budaya, Referensi, Perkakas
 
 ### Tips hemat energi
 
--  Membuat kebiasaan hemat energi menjadi budaya indonesia
--  Membiasakan mengecek meteran secara berkala
--  Menyiapkan pulsa/token listrik untuk berjaga-jaga bagi pelanggan listrik prabayar
--  Menghindari biaya keterlambatan (BK) dengan bersiap setiap bulan atau beralih ke langganan listrik prabayar
--  Menghindari penyalahgunaan listrik oleh orang lain P2TL adalah singkatan dari 
+-  Membuat kebiasaan hemat energi menjadi budaya indonesia.
+-  Membiasakan mengecek meteran secara berkala.
+-  Menyiapkan pulsa/token listrik untuk berjaga-jaga bagi pelanggan listrik prabayar.
+-  Menghindari biaya keterlambatan (BK) dengan bersiap setiap bulan atau beralih ke langganan listrik prabayar.
+-  Mengcegah penyalahgunaan listrik oleh orang lain.
 -  Mengotomatisasi alat elektronik dengan menjadwalkan proses. Seperti di komputer atau ponsel yang terdapat aplikasi untuk menjadwalkan kapan sistemnya akan dihibernasi ( _hibernate_ ) atau dimatikan (_ shut down _) secara otomatis setelah pemakaian tertentu. Sehingga baterai dan penggunaan energi lebih irit.
--  Mencegah putusya arus listrik secara tiba-tiba dengan mengetahui batas daya listrik
--  Mengetahui adanya Penertiban Pemakaian Tenaga Listrik (P2TL)
--  Mengetahui adanya Hari Listrik Nasional (HLN) setiap tanggal 27 Oktober
+-  Mencegah putusya arus listrik secara tiba-tiba dengan mengetahui batas daya listrik.
+-  Mengetahui adanya Penertiban Pemakaian Tenaga Listrik (P2TL).
+-  Mengetahui adanya Hari Listrik Nasional (HLN) setiap tanggal 27 Oktober/
+-  Mengetahui adanya Jam Bumi ( _Earth Hour_ ) setiap akhir bulan Maret.
 
 
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *

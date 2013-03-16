@@ -2,31 +2,44 @@
 
 <resources>
 
+    <!-- Core -->
+
     <string name="name_app">Kargu</string>
     <string name="name_edition">Listrik</string>
     <string name="name_appedition">Kargu Listrik</string>
     <string name="version_app">Versi 0.1</string>
     <string name="tagline_app">Memperkirakan biaya penggunaan tanpa ragu</string>
 
-    <string name="title_number">Angka yang diambil</string>
+    <!-- Menu -->
 
     <string name="title_settings">Pengaturan Lengkap</string>
     <string name="action_settings">Pengaturan</string>
+    <string name="button_settings">Pengaturan</string>
+
+    <!-- Help -->
 
     <string name="title_help">Bantuan Penggunaan</string>
-    <string name="button_help">Bantuan</string>
     <string name="action_help">Bantuan</string>
+    <string name="button_help">Bantuan</string>
     <string name="dialog_help">Masukkan data mengenai daya listrik dan alat elektronik yang akan Anda gunakan</string>
+
+    <!-- About -->
 
     <string name="title_about">Tentang Aplikasi</string>
     <string name="button_about">Tentang</string>
     <string name="action_about">Tentang</string>
     <string name="dialog_about">Kargu Listrik, memperkirakan biaya penggunaan listrik tanpa ragu serta membudayakan hemat energi</string>
 
+    <!-- Dialog -->
+
     <string name="button_close">Tutup</string>
+
+    <!-- Calculation -->
 
     <string name="edit_inputNumber">0</string>
     <string name="button_getInput">Ambil</string>
     <string name="button_reset">Kosongkan</string>
+
+    <string name="title_number">Angka yang diambil</string>
 
 </resources>
