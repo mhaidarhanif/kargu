@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
     return true;
   }
 
-  /** Called when press getNumber */
+  // Called when press getNumber
   public void getNumber(View view) {
     Intent intent = new Intent(this, DisplayNumberActivity.class);
     EditText editText = (EditText) findViewById(R.id.edit_inputNumber);
