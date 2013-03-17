@@ -16,6 +16,7 @@
     <!-- Title -->
 
     <TextView
+        android:id="@+id/title_appedition"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/name_appedition"
@@ -42,30 +43,30 @@
             android:layout_height="wrap_content"
             android:focusable="true" />
 
-        <Button
-            android:id="@+id/button_getNumber"
-            android:text="@string/button_getInput"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="getNumber" />
-
     </LinearLayout>
 
     <!-- Additionals -->
 
     <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button_count"
+            android:text="@string/button_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="calculateNumber" />
 
         <Button
             android:id="@+id/button_reset"
             android:text="@string/button_reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentTop="true" />
+            android:layout_toRightOf="@+id/button_count"
+            android:layout_alignTop="@+id/button_count" />
 
     </RelativeLayout>
 

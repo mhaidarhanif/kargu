@@ -33,6 +33,8 @@ Kemampuan dan nilai masih dibatasi oleh informasi perhitungan dari PLN dan pemer
 
 Dibuat berdasarkan pengalaman akan keraguan perhitungan untuk memperkirakan biaya dari penggunaan listrik secara manual. Sebagian besar pengguna atau pelanggan listrik ingin mengetahui dan seharusnya mengetahui lebih mengenai tagihan atau biaya yang perlu disiapkan per bulan tanpa harus berada pada kondisi setelah satu bulan pemakaian listrik. Sehingga bisa menjadi alternatif untuk mengatasi keraguan jika terdapat alat elektronik baru dalam lingkungan yang digunakan. Perlu diketahui bahwa ini masih dalam tahap eksperimen dan bertujuan utama untuk edukasi karena berawal dari tugas pembelajaran.
 
+Perlu diketahui bahwa banyak sekali aplikasi seperti ini dalam berbagai bentuk seperti situs web, aplikasi, dan cara manual. Tapi yang ditekankan dalam aplikasi ini adalah penyesuaian dengan aturan PLN serta preferensi prayabar dan pascabayar.
+
 Kode sumber aplikasi ini dirilis secara terbuka ( _open source_ ) di [GitHub](https://github.com/mhaidarh/kargu).
 
 
@@ -153,7 +155,7 @@ Keluaran menjadi seperti:
 |    Prabayar        | Rupiah      |  46800 |
 |    Pascabayar      | Rupiah      | 106200 |
 | Pajak/Bulan        | Persen      |     10 |
-| Biaya/Bulan        | Rupiah      |        |
+| Biaya/Bulan        |             |        |
 |    Prabayar        | Rupiah      |  51480 |
 |    Pascabayar      | Rupiah      | 116820 |
 
@@ -182,7 +184,7 @@ Kategori    : Energi, Edukasi, Budaya, Referensi, Perkakas
 -  Menyiapkan pulsa/token listrik untuk berjaga-jaga bagi pelanggan listrik prabayar.
 -  Menghindari biaya keterlambatan (BK) dengan bersiap setiap bulan atau beralih ke langganan listrik prabayar.
 -  Mengcegah penyalahgunaan listrik oleh orang lain.
--  Mengotomatisasi alat elektronik dengan menjadwalkan proses. Seperti di komputer atau ponsel yang terdapat aplikasi untuk menjadwalkan kapan sistemnya akan dihibernasi ( _hibernate_ ) atau dimatikan (_ shut down _) secara otomatis setelah pemakaian tertentu. Sehingga baterai dan penggunaan energi lebih irit.
+-  Mengotomatisasi alat elektronik dengan menjadwalkan proses. Seperti di komputer atau ponsel yang terdapat aplikasi untuk menjadwalkan kapan sistemnya akan dihibernasi ( _hibernate_ ) atau dimatikan ( _shut down_ ) secara otomatis setelah pemakaian tertentu. Sehingga baterai dan penggunaan energi lebih irit.
 -  Mencegah putusya arus listrik secara tiba-tiba dengan mengetahui batas daya listrik.
 -  Mengetahui adanya Penertiban Pemakaian Tenaga Listrik (P2TL).
 -  Mengetahui adanya Hari Listrik Nasional (HLN) setiap tanggal 27 Oktober/
