@@ -13,7 +13,7 @@ public class DisplayNumberActivity extends MainActivity {
 
   @SuppressLint("NewApi")
 
-  /** Display new activity */
+  // Display new activity
   @TargetApi(11)
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -31,14 +31,14 @@ public class DisplayNumberActivity extends MainActivity {
     // Set text view as activity layout
     setContentView(textView);
 
-    /** Check minimum API level number to use ActionBar API */
+    // Check minimum API level number to use ActionBar API
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
       // Show Up button in ActionBar
       getActionBar().setDisplayHomeAsUpEnabled(true);
     }
   }
 
-  /** Inherit method from ActionBar */
+  // Inherit method from ActionBar
   @Override
   public boolean onOptionsItemSelected(MenuItem item) {
     switch (item.getItemId()) {

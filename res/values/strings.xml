@@ -39,7 +39,7 @@
     <!-- Calculation -->
 
     <string name="edit_inputNumber">0</string>
-    <string name="button_getInput">Ambil</string>
+    <string name="button_count">Hitung</string>
     <string name="button_reset">Kosongkan</string>
 
     <string name="title_number">Angka yang diambil</string>
