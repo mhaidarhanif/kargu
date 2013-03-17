@@ -6,7 +6,7 @@ Dokumentasi Kargu (lang=id-ID)
 
 Edisi aplikasi [Android](http://android.com)
 
-[![Logo Kargu](https://raw.github.com/mhaidarh/kargu/master/res/drawable/ic_launcher.png)](https://github.com/mhaidarh/kargu/ "Logo Kargu Berwarna")
+[![Logo Kargu](https://raw.github.com/mhaidarh/kargu/develop/assets/logo/kargu_logo_text-hor_small.png)](https://github.com/mhaidarh/kargu/ "Logo Kargu Berwarna")
 [![Status Buat](https://secure.travis-ci.org/mhaidarh/kargu.png)](http://travis-ci.org/mhaidarh/kargu/ "Status pembuatan dari Travis CI")
 
 ```
@@ -63,11 +63,18 @@ Kargu 0.0
 
 Kargu 0.1
 
+-  [Logo asli baru](/assets/logo/kargu_logo.png) dengan [logogram horizontal](/assets/logo/kargu_logo_text-hor.png) dan [vertikal](/assets/logo/kargu_logo_text-ver.png)
+   -  Skema: [Palet warna](/assets/logo/colors.mkd)
+   -  Fon: [SF Archery Black](http://fontsquirrel.com/fonts/SF-Archery-Black) oleh [ShyFoundry](http://shyfoundry.com/fonts/shareware/sfarcheryb.html)
 -  Menggunakan pedoman konvensi gaya kode
    -  [Oracle Code Conventions for the Java Programming Language](http://oracle.com/technetwork/java/codeconv-138413.html)
    -  [Google Code Style Guide](http://google-styleguide.googlecode.com)
--  Perubahan tata letak
+-  Pengaturan Maven yang lebih baik
+-  Perubahan tata letak dan tema
 -  Masukan dasar dengan tombol
+-  Menambah beberapa _string_ dan terjemahannya
+-  Menambah beberapa komentar dan mempersingkat penulisannya
+-  Memungkinkan untuk mengembalikan nilai saat aplikasi dimulai kembali
 
 Kargu x.x (TODO)
 

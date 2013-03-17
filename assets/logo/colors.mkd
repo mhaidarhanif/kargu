@@ -1,0 +1,25 @@
+Kargu Colors
+============
+
+Modifier: M Haidar Hanif
+Name: Kargu + Android
+Columns: 10
+
+Color Palette
+-------------
+
+```
+H   S   L   HEX     Name 
+
+136 145 204 AFDDE9 # Light Cyan
+ 28 255 153 FFBB33 # Light Orange
+ 53 255 102 99CC00 # Light Green
+253 255 162 FF444F # Light Red
+  0   0 221 DDDDDD # Light Gray
+
+136 145 102 2C89A0 # Dark Cyan
+ 23 255 128 FF8800 # Dark Orange
+ 57 255  76 659900 # Dark Green
+  0 255 102 CC0000 # Dark Red
+  0   0  34 222222 # Dark Gray
+```
