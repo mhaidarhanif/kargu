@@ -13,13 +13,13 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
-  public static final String EXTRA_NUMBER = "com.mhaidarhanif.android.kargu.NUMBER";
+  public static final String EXTRA_NUMBER = "NUMBER";
   private static Drawable sLogoKargu;
 
   // For complete title purpose. Will be used later
   // String appEditionName = getString(R.string.name_app) + " " + getString(R.string.name_edition);
   TextView mTextView; // Text view in layout
-  EditText mNumberInput; // First number input to fill
+  int mNumberInput; // First number input to fill
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +57,7 @@ public class MainActivity extends Activity {
     super.onRestoreInstanceState(savedInstanceState);
 
     // Restore previous input number if apply
-    mNumberInput = savedInstanceState.putInt(EXTRA_NUMBER);
+    mNumberInput = savedInstanceState.getInt(EXTRA_NUMBER);
   }
 
   @Override
