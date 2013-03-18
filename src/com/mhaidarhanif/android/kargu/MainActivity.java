@@ -1,10 +1,8 @@
 package com.mhaidarhanif.android.kargu;
 
-import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -36,13 +34,6 @@ public class MainActivity extends Activity {
 
     // Initialize member TextView
     mTextView = (TextView) findViewById(R.id.about_title);
-
-    // Check minimum API level number to use ActionBar API
-    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-        // Make sure app icon in action bar does not behave as a button
-        ActionBar actionBar = getActionBar();
-        actionBar.setHomeButtonEnabled(false);
-    }
   }
 
   @Override

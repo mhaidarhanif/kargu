@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--suppress AndroidLintHardcodedDebugMode -->
+
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mhaidarhanif.android.kargu"
@@ -8,6 +11,8 @@
     <uses-sdk
         android:minSdkVersion="10"
         android:targetSdkVersion="16" />
+
+    <!--suppress AndroidLintHardcodedDebugMode -->
 
     <application
         android:debuggable="true"
