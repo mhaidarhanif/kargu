@@ -11,7 +11,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <!-- Title -->
 
@@ -24,7 +24,7 @@
         android:textStyle="bold"
         android:textSize="@dimen/font_large"
         android:textColor="@color/dark_yellow"
-        android:paddingBottom="16dip" />
+        android:paddingBottom="16dip"/>
 
     <!-- Input -->
 
@@ -33,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="8dip" >
+        android:padding="8dip">
 
         <EditText
             android:id="@+id/edit_inputNumber"
@@ -41,7 +41,7 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:focusable="true" />
+            android:focusable="true"/>
 
     </LinearLayout>
 
@@ -51,14 +51,15 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
 
         <Button
             android:id="@+id/button_count"
             android:text="@string/button_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="calculateNumber" />
+            android:onClick="calculateNumber"/>
 
         <Button
             android:id="@+id/button_reset"
@@ -66,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/button_count"
-            android:layout_alignTop="@+id/button_count" />
+            android:layout_alignTop="@+id/button_count"/>
 
     </RelativeLayout>
 

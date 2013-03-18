@@ -6,8 +6,7 @@
     android:layout_width="250dp"
     android:layout_height="180dp"
     android:background="@color/light_gray"
-    android:padding="12dip"
-    >
+    android:padding="12dip">
 
     <TextView
         android:id="@+id/about_title"
@@ -17,8 +16,7 @@
         android:gravity="center_horizontal"
         android:textSize="@dimen/font_medium"
         android:textColor="@color/dark_yellow"
-        android:paddingBottom="12dip"
-        />
+        android:paddingBottom="12dip"/>
 
     <TextView
         android:text="@string/dialog_about"
@@ -27,8 +25,7 @@
         android:gravity="center_horizontal"
         android:textSize="@dimen/font_small"
         android:textColor="@color/dark_gray"
-        android:paddingBottom="12dip"
-        />
+        android:paddingBottom="12dip"/>
 
     <Button
         android:id="@+id/button_close_dialog"
@@ -36,7 +33,6 @@
         android:layout_height="fill_parent"
         android:layout_width="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:onClick="closeDialog"
-        />
+        android:onClick="closeDialog"/>
 
 </LinearLayout>
