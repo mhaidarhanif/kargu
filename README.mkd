@@ -6,7 +6,7 @@ Dokumentasi Kargu (lang=id-ID)
 
 Edisi aplikasi [Android](http://android.com)
 
-[![Logo Kargu](https://raw.github.com/mhaidarh/kargu/develop/assets/logo/kargu_logo_text-hor_small.png)](https://github.com/mhaidarh/kargu/ "Logo Kargu Berwarna")
+[![Logo Kargu](https://raw.github.com/mhaidarh/kargu/develop/assets/logo/kargu_logo_text-hor_small.png)](https://github.com/mhaidarh/kargu "Logo Kargu Berwarna")
 [![Status Buat](https://secure.travis-ci.org/mhaidarh/kargu.png)](http://travis-ci.org/mhaidarh/kargu/ "Status pembuatan dari Travis CI")
 
 ```
@@ -27,7 +27,7 @@ Deksripsi
 
 Kargu, disingkat dari [Ka]lkulator Perki[r]aan Peng[gu]naan, adalah aplikasi kalkulator sederhana dengan penyesuaian pendekatan ketetapan biaya oleh PLN dan undang-undang yang berlaku. Bermula dari keraguan pada kala ingin membeli dan alat elektronik baru, perlu tahu tagihan yang akan didapat nantinya jika pascabayar atau pulsa yang harus disiapkan jika prabayar.
 
-Pada awalnya bertujuan utama untuk memperkiraan dengan perhitungan terdekat, sehingga belum menggunaan pendekatan simulasi secara nyata. Akan dilengkapi dengan ekstensi/perluasan pengetahuan budaya nasional (Indonesia) dalam penggunaan listrik sehari-hari di berbagai tempat, golongan, dan kegunaan. Masih dibuat khusus untuk penggunaan energi listrik dan amat sederhana. Tapi jika diperlukan dapat diperluas dengan energi bahan bakar minyak, gas, dan lain-lain.
+Pada awalnya bertujuan utama untuk memperkiraan dengan perhitungan terdekat, sehingga belum menggunaan pendekatan simulasi secara nyata. Jadi hanya mencatat penggunaan rata-rata sehari dan mengalikannya untuk sebulan. Sehingga bukan mencatat penggunaan setiap hari dalam sebulan, walaupun fitur tersebut mungkin akan didukung nanti. Akan dilengkapi dengan ekstensi/perluasan pengetahuan budaya nasional (Indonesia) dalam penggunaan listrik sehari-hari di berbagai tempat, golongan, dan kegunaan. Masih dibuat khusus untuk penggunaan energi listrik dan amat sederhana. Tapi jika diperlukan dapat diperluas dengan energi bahan bakar minyak, gas, dan lain-lain.
 
 Kemampuan dan nilai masih dibatasi oleh informasi perhitungan dari PLN dan pemerintah yang belum terbuka dan diketahui secara mudah untuk publik. Sehingga sebagian besar menggunakan perkiraan terdekat yang umumnya dipakai. Juga memang saat ini belum ada pemilihan golongan tarif dengan simbol, untuk mempercepat pengembangan awal. Lagipula akan lebih memudahkan pengguna untuk memulai tanpa harus mengetahui.
 
@@ -35,7 +35,7 @@ Dibuat berdasarkan pengalaman akan keraguan perhitungan untuk memperkirakan biay
 
 Perlu diketahui bahwa banyak sekali aplikasi seperti ini dalam berbagai bentuk seperti situs web, aplikasi, dan cara manual. Tapi yang ditekankan dalam aplikasi ini adalah penyesuaian dengan aturan PLN serta preferensi prayabar dan pascabayar.
 
-Kode sumber aplikasi ini dirilis secara terbuka ( _open source_ ) di [GitHub](https://github.com/mhaidarh/kargu).
+Kode sumber aplikasi ini dirilis secara terbuka ( _open source_ ) di [GitHub](https://github.com/mhaidarh/kargu) dan diberikan secara gratis. Anda dapat berkontribusi dengan apa saja seperti kode program, dokumentasi, gambar, suara, dan lain-lain.
 
 
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
@@ -49,7 +49,7 @@ EUC/Kargupy 0.1-0.8
 -  Dirilis awal sebagai [Energy Usage Calculator (EUC)](http://penelitian.gunadarma.ac.id/kommit/jadwal.html)
 -  Dirilis ulang sebagai [Kargupy](https://github.com/mhaidarh/kargupy)
 
-Kargu 0.0
+Kargu 0.1
 
 -  Membuat skema dan desain dasar
 -  Mengumpulkan informasi dan bahan
@@ -59,9 +59,9 @@ Kargu 0.0
    - maksimum API level 16r4, versi 4.1.2 [Jelly Bean](http://developer.android.com/about/versions/jelly-bean.html)
 -  Inisialiasi proyek dengan [Apache Maven™ 3.0.5](http://maven.apache.org) dan [Apache Ant™ 1.9.0](http://ant.apache.org)
 -  Ditambah dengan [Android Maven Plugin 3.5.1](https://maven-android-plugin.googlecode.com)
--  Inisialisasi konfigurasi untuk [Jetbrains](http://jetbrains.org) [IntelliJ IDEA 12 CE](http://jetbrains.com/idea/)
+-  Inisialisasi konfigurasi untuk [Jetbrains](http://jetbrains.org) [IntelliJ IDEA 12 CE](http://jetbrains.com/idea)
 
-Kargu 0.1
+Kargu 0.2
 
 -  [Logo asli baru](/assets/logo/kargu_logo.png) dengan [logogram horizontal](/assets/logo/kargu_logo_text-hor.png) dan [vertikal](/assets/logo/kargu_logo_text-ver.png)
    -  Skema: [Palet warna](/assets/logo/colors.mkd)
@@ -75,6 +75,7 @@ Kargu 0.1
 -  Menambah beberapa _string_ dan terjemahannya
 -  Menambah beberapa komentar dan mempersingkat penulisannya
 -  Memungkinkan untuk mengembalikan nilai saat aplikasi dimulai kembali
+-  Menambah petunjuk penggunaan
 
 Kargu x.x (TODO)
 
@@ -88,7 +89,7 @@ Kargu x.x (TODO)
 -  Menggunakan Integrasi Kontinu ([Continuous Integration (CI)](http://en.wikipedia.org/wiki/Continuous_integration)) [Travis-CI](https://travis-ci.org).
 
 
-*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 
 
 Alur Skema
@@ -116,7 +117,7 @@ Di akhir pengguna bisa melakukan perhitungan ulang. Kemungkinan tidak adanya kos
 
 Inti penyelesaian agak berbeda dengan simulasi biaya oleh PLN atau tabel perhitungan lainnya. Dimana pada umumnya memerlukan informasi penggunaan per bulan yang sudah berlalu (untuk pelanggan listrik pascabayar), sedangkan aplikasi ini hanya memerlukan informasi umum yang telah diketahui secara mudah, baik pelanggan listrik prabayar atau pascabayar, yaitu:
 
-*  daya listrik rumah atau tempat tinggal
+*  batas daya listrik rumah atau tempat tinggal
 *  beberapa alat elektronik yang sudah diketahui atau akan dipakai,
 *  jenis alat elektronik, atau
 *  daya yang dibutuhkan dan waktu penggunaannya berdasarkan perkiraan maksimum
@@ -167,6 +168,27 @@ Keluaran menjadi seperti:
 |    Pascabayar      | Rupiah      | 116820 |
 
 Di akhir pengguna bisa melakukan perhitungan ulang. Dan rencananya bisa menyimpan data masukan dan hasil laporan yang didapat.
+
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+
+Petunjuk Penggunaan
+-------------------
+
+0. Selamat datang di aplikasi Kargu! Sekarang adalah pertama kali Anda menggunakan Kargu.
+   Apakah Anda perlu petunjuk penggunaan?
+   -  Ya, perlu
+   -  Tidak perlu
+1. Untuk memulai perhitungan, Anda perlu mengetahui:
+   -  Batas daya listrik bangunan seperti rumah atau kamar
+   -  Alat elektronik apa saja yang digunakan
+   -  Waktu penggunaan rata-rata sehari dalam jam
+2. Masukkan nilai daya listrik (dalam VA atau Volt Ampere)
+3. Pilih alat elektronik yang tersedia atau tambahkan sendiri
+   -  Jika memilih yang sudah ada, beri nilai waktu
+   -  Jika menambah sendiri, beri nilai Watt dan waktu
+4. Tekan tombol hitung dan silakan lihat hasil laporannya
 
 
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *

@@ -87,14 +87,6 @@
                 </configuration>
                 <extensions>true</extensions>
             </plugin>
-            
-            <plugin>
-                <artifactId>exec-maven-plugin</artifactId>
-                <groupId>org.codehaus.mojo</groupId>
-                <configuration>
-                    <executable>${basedir}/scripts/run_app.sh</executable>
-                </configuration>
-            </plugin>
 
         </plugins>
 
