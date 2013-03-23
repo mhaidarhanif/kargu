@@ -12,6 +12,20 @@
     <name>Kargu</name>
     <url>https://github.com/mhaidarh/kargu/</url>
 
+    <developers>
+        <developer>
+            <id>mhaidarh</id>
+            <name>M Haidar Hanif</name>
+            <email>mhaidarhanif@gmail.com</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <url>http://mit-license.org</url>
+        </license>
+    </licenses>
+
     <properties>
         <platform.version> 4.1.1.4
         </platform.version>

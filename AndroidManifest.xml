@@ -1,49 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- suppress AndroidLintHardcodedDebugMode -->
-
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mhaidarhanif.android.kargu"
     android:versionCode="0"
-    android:versionName="0.1" >
+    android:versionName="0.1">
 
-    <uses-sdk
-        android:minSdkVersion="10"
-        android:targetSdkVersion="16" />
-
-    <!-- suppress AndroidLintHardcodedDebugMode -->
+    <uses-sdk android:minSdkVersion="10"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:debuggable="true"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/name_app"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
 
         <activity
             android:name=".MainActivity"
             android:label="@string/name_app"
-            android:launchMode="singleTask" >
+            android:launchMode="singleTask">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
         <activity
             android:name=".DisplayNumberActivity"
             android:label="@string/title_number"
-            android:parentActivityName="com.mhaidarhanif.android.kargu.MainActivity" >
+            android:parentActivityName="com.mhaidarhanif.android.kargu.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mhaidarhanif.android.kargu.MainActivity" />
+                android:value="com.mhaidarhanif.android.kargu.MainActivity"/>
         </activity>
 
         <activity
             android:name=".AboutDialogActivity"
             android:label="@string/title_about"
-            android:theme="@android:style/Theme.Dialog" >
+            android:theme="@android:style/Theme.Dialog">
         </activity>
 
     </application>
