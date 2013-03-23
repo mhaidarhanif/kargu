@@ -1,0 +1,15 @@
+0. Selamat datang di aplikasi Kargu! Sekarang adalah pertama kali Anda menggunakan Kargu. Silakan ikuti petunjuk penggunaan berikut.
+   *  Tombol: Lanjut
+1. Untuk memulai perhitungan, Anda perlu mengetahui:
+   -  Batas daya listrik bangunan seperti rumah atau kamar
+   -  Alat elektronik apa saja yang digunakan
+   -  Waktu penggunaan rata-rata sehari dalam jam
+   *  Tombol: Lanjut
+2. Masukkan nilai daya listrik (dalam VA atau Volt Ampere)
+   *  Tombol: Lanjut
+3. Pilih alat elektronik yang tersedia atau tambahkan sendiri
+   -  Jika memilih yang sudah ada, beri nilai waktu
+   -  Jika menambah sendiri, beri nilai Watt dan waktu
+   *  Tombol: Lanjut
+4. Tekan tombol hitung dan silakan lihat hasil laporannya
+   *  Tombol: Coba

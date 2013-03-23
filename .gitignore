@@ -3,6 +3,7 @@ misc/
 tmp/
 *.swp
 *.jar
+screenshot_*.png
 
 # Backup files
 *.un~
