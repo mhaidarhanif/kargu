@@ -7,6 +7,8 @@ Name: Kargu + Android
 
 Columns: 10
 
+Based on [Android Color Palette](http://developer.android.com/design/style/color.html)
+
 Color Palette
 -------------
 

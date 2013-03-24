@@ -41,8 +41,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.8888238341"
-     inkscape:cx="52.20958821"
-     inkscape:cy="220.9452949"
+     inkscape:cx="63.23539515"
+     inkscape:cy="222.4454047"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -84,7 +84,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -285,6 +285,50 @@
          d="m 36.99999999,592.015625 0,159.96875 27.9375,0 0,-55.96875 10.0625,-10.03125 9.96875,10.03125 0,55.96875 28.03125001,0 0,-55.96875 -24.03125001,-24 L 113,647.984375 l 0,-55.96875 -28.03125001,0 0,55.96875 -20.03125,20 0,-75.96875 -27.9375,0 z M 154.5,611.953125 l -30.09375,20 0,120.03125 28.03125,0 0,-44.03125 20.03125,0 0,44.03125 28.03125,0 0,-120.03125 -30.09375,-20 -15.90625,0 z m 87.5,0 -30.09375,20 0,120.03125 28.03125,0 0,-59.96875 20.03125,0 0,59.96875 28.03125,0 0,-55.96875 -19.0625,-14.0625 19.0625,-13.96875 0,-56.03125 -46,0 z m 87.5,0 -30.09375,20 0,120.03125 46,0 30.09375,-20.03125 0,-59.9375 -36.0625,0 0,9.9375 8.03125,0 0,50 -20.03125,0 0,-100 20.03125,0 0,30 28.03125,0 0,-50 -46,0 z m 57.40625,0 0,140.03125 46,0 30.09375,-20.03125 0,-120 -28.03125,0 0,120 -20.03125,0 0,-120 -28.03125,0 z m -234.46875,20 20.03125,0 0,56.0625 -20.03125,0 0,-56.0625 z m 87.5,0 20.03125,0 0,40.0625 -20.03125,0 0,-40.0625 z"
          style="font-size:200px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#dddddd;fill-opacity:1;stroke:none;display:inline;font-family:SF Archery Black SC;-inkscape-font-specification:SF Archery Black SC"
          inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g3252"
+       inkscape:export-filename="/home/mhaidarh/storage/project/kargu/assets/logo/kargu_logo_mini.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:export-ydpi="18"
+         inkscape:export-xdpi="18"
+         inkscape:export-filename="/home/mhaidarh/storage/project/kargu/misc/design/kargu_logo_text-hor_small.png"
+         inkscape:connector-curvature="0"
+         id="rect4939-7-6"
+         d="M -2.82254079e-8,-4 15.99999997,-4 l 0,16 L -2.822540881e-8,12 z"
+         style="color:#000000;fill:none;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <g
+         id="g3245">
+        <path
+           style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#222222;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:20;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+           d="m 3.199999969,-2.72 c -0.05393189,-1.2199e-5 -0.107808921,0.01389155 -0.155,0.04 l -2.8800000004,1.6 C 0.0655933187,-1.024954889 -9.187021905e-6,-0.9136294249 -3.142540771e-8,-0.8 l 0,9.6 C -9.187021905e-6,8.913629425 0.0655933187,9.024954889 0.1649999686,9.08 l 2.8800000004,1.6 c 0.04719108,0.0261085 0.101068109,0.0400122 0.155,0.04 l 9.600000001,0 c 0.0539319,1.22e-5 0.10780892,-0.0138916 0.155,-0.04 l 2.88,-1.6 c 0.0994067,-0.05504511 0.16500916,-0.166370575 0.165,-0.28 l 0,-9.6 c 9.16e-6,-0.1136294249 -0.0655933,-0.224954889 -0.165,-0.28 l -2.88,-1.6 c -0.0471911,-0.02610845 -0.10106811,-0.0400122 -0.155,-0.04 z"
+           id="rect4838-8-2-7-1"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccccccccccccccc" />
+        <path
+           style="color:#000000;fill:#afdde9;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 3.624999962,-1.833333339 -2.6250000027,1.4583333355 0,8.7500000015 2.6250000027,1.458333342 8.750000018,0 2.625,-1.458333342 0,-8.7500000015 -2.625,-1.4583333355 z"
+           id="rect4838-7-9"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccccccc" />
+        <path
+           style="color:#000000;fill:#ffbb33;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 10.04878046,0 -1.64878049,3.674796748 0.665853659,0 1.300000001,0 L 8.39999997,8 9.065853629,8 13.59999997,2.341463415 l 0,-0.68292683 -1.6804878,0 0.3804878,-1.008130081 0,-0.650406504 -2.25121951,0 z"
+           id="rect4277-6-2-6"
+           inkscape:connector-curvature="0" />
+        <path
+           style="color:#000000;fill:#ff4f59;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 2.39999997,6 0,2 0.609756097,0 4.390243903,0 0,-1.32258065 0,-0.67741935 -5,0 z"
+           id="rect3013-7-8-2-0-5-6"
+           inkscape:connector-curvature="0" />
+        <path
+           style="color:#000000;fill:#99cc00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 3.954878019,0 0,1.554878049 -1.554878049,0 0,1.890243901 0.609756098,0 0.945121951,0 0,1.55487805 0.609756097,0 1.25,0 0,-1.55487805 1.585365854,0 0,-1.249999999 0,-0.640243902 -1.585365854,0 0,-0.945121951 0,-0.609756098 -1.859756097,0 z"
+           id="rect3013-7-8-2-8-9-6-6-3"
+           inkscape:connector-curvature="0" />
+      </g>
     </g>
   </g>
   <g
