@@ -15,8 +15,8 @@ Subnama     = Kalkulator Perkiraan Penggunaan
 Nama Edisi  = Energi Listrik
 Judul       = Kargu, kalkulator untuk memperkiraan penggunaan energi listrik serta mencanangkan budaya hemat energi
 Judul Alt.  = Kargu, mencanangkan budaya hemat energi dengan memperkiraan penggunaan energi listrik
-deskripsi pendek  = Kargu adalah aplikasi kalkulator untuk memperkiraan penggunaan energi listrik yang bisa untuk variasi pelanggan prabayar atau pascabayar serta mencanangkan budaya hemat energi dengan aturan biaya oleh PLN.
-deskripsi panjang = Terdapat di [deskripsi](/#deskripsi)
+Deskripsi Pendek  = Kargu adalah aplikasi kalkulator untuk memperkiraan penggunaan energi listrik yang bisa untuk variasi pelanggan prabayar atau pascabayar serta mencanangkan budaya hemat energi dengan aturan biaya oleh PLN.
+Deskripsi Panjang = Terdapat di [deskripsi](/#deskripsi)
 Tanggal     = 2013-03-XX XX:XX:XX
 Foto Produk = ./screen/kargu_x.x_screen-hr.png
 Berkas APK  = ./bin/Kargu_x.x.apk
@@ -27,7 +27,7 @@ Kategori    = Energi, Edukasi, Budaya, Referensi, Perkakas
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 
 
-Deksripsi
+Deskripsi
 ---------
 
 **Kar·gu** /kargu/ _n_
@@ -44,28 +44,25 @@ Perlu diketahui bahwa banyak sekali aplikasi seperti ini dalam berbagai bentuk s
 
 ### Informasi Tambahan
 
-Dokumentasi seperti petunjuk penggunaan terdapat di [laman dokumentasi/wiki](https://github.com/mhaidarh/kargu/wiki).
-
-Kode sumber aplikasi ini dirilis secara terbuka ( _open source_ ) dalam repositori [Kargu di GitHub](https://github.com/mhaidarh/kargu) dan diberikan secara gratis.
-
-Kode sumber perintis, proyek Kargupy, terdapat dalam repositori [Kargupy di GitHub](https://github.com/mhaidarh/kargupy).
-
-Proyek ini dibuat awal oleh [M Haidar Hanif](https://github.com/mhaidarh). Lengkapnya silakan baca berkas [AUTHORS](AUTHORS).
+-  Dokumentasi seperti petunjuk penggunaan terdapat di [laman dokumentasi/wiki](https://github.com/mhaidarh/kargu/wiki).
+-  Kode sumber aplikasi ini dirilis secara terbuka / _open source_ dalam repositori [Kargu di GitHub](https://github.com/mhaidarh/kargu) dan diberikan secara gratis.
+-  Kode sumber perintis, proyek Kargupy, terdapat dalam repositori [Kargupy di GitHub](https://github.com/mhaidarh/kargupy).
+-  Proyek ini dibuat awal oleh [M Haidar Hanif](https://github.com/mhaidarh). Lengkapnya silakan baca berkas [AUTHORS](AUTHORS).
 
 ### Kontribusi
 
 Kontribusi sangat disambut dalam bentuk dan ukuran apa saja seperti:
 
--  kode program, fitur, perbaikan, terjemahan: Silakan ['garpu'](https://github.com/mhaidarh/kargu/fork_select)( _fork_ ) proyek ini lalu [kirim permintaan tarik](https://github.com/mhaidarh/kargu/pull/new/develop) ( _pull request_ ) di cabang ( _branch_ ) develop.
+-  kode program, fitur, perbaikan, terjemahan: Silakan ['garpu'](https://github.com/mhaidarh/kargu/fork_select) / _fork_ proyek ini lalu [kirim permintaan tarik](https://github.com/mhaidarh/kargu/pull/new/develop) / _pull request_ di cabang / _branch_ develop.
 -  dokumentasi: Silakan edit/sunting [laman dokumentasi/wiki](https://github.com/mhaidarh/kargu/wiki).
 -  isu, komentar, permintaan, laporan kerusakan: Silakan tulis di [laman isu](https://github.com/mhaidarh/kargu/issues).
--  berkas multimedia seperti gambar, suara, dan lain-lain: Silakan kirim ke [surel ( _email_ ) ini](mailto:mhaidarhanif@gmail.com).
+-  berkas multimedia seperti gambar, suara, dan lain-lain: Silakan kirim ke [surel / _email_ ini](mailto:mhaidarhanif@gmail.com).
 
-Harap menggunakan bahasa Inggris untuk pesan perubahan ( _commit message_ ) agar lebih mudah diakses untuk pengembangan. Nanti jika diterima maka akan termasuk dalam rilis stabil selanjutnya dan Anda akan diberi kredit.
+Harap menggunakan bahasa Inggris untuk pesan perubahan / _commit message_ agar lebih mudah diakses untuk pengembangan. Nanti jika diterima maka akan termasuk dalam rilis stabil selanjutnya dan Anda akan diberi kredit.
 
 ### Tips hemat energi
 
-(Untuk orang umum, khususnya Indonesia)
+Catatan untuk orang umum, khususnya Indonesia.
 
 -  Membuat kebiasaan hemat energi menjadi budaya nasional.
 -  Menggunakan peralatan listrik seperlunya.
@@ -73,11 +70,11 @@ Harap menggunakan bahasa Inggris untuk pesan perubahan ( _commit message_ ) agar
 -  Menyiapkan pulsa/token listrik untuk berjaga-jaga bagi pelanggan listrik prabayar.
 -  Menghindari biaya keterlambatan (BK) dengan bersiap setiap bulan atau beralih ke langganan listrik prabayar.
 -  Mengcegah penyalahgunaan listrik oleh orang lain.
--  Mengotomatisasi alat elektronik dengan menjadwalkan proses. Seperti di komputer atau ponsel yang terdapat aplikasi untuk menjadwalkan kapan sistemnya akan dihibernasi ( _hibernate_ ) atau dimatikan ( _shut down_ ) secara otomatis setelah pemakaian tertentu. Sehingga baterai dan penggunaan energi lebih irit.
+-  Mengotomatisasi alat elektronik dengan menjadwalkan proses. Seperti di komputer atau ponsel yang terdapat aplikasi untuk menjadwalkan kapan sistemnya akan dihibernasi / _hibernate_ atau dimatikan / _shut down_ secara otomatis setelah pemakaian tertentu. Sehingga baterai dan penggunaan energi lebih irit.
 -  Mencegah putusya arus listrik secara tiba-tiba dengan mengetahui batas daya listrik.
 -  Mengetahui adanya Penertiban Pemakaian Tenaga Listrik (P2TL).
--  Mengetahui adanya Hari Listrik Nasional (HLN) setiap tanggal 27 Oktober/
--  Mengetahui adanya Jam Bumi ( _Earth Hour_ ) setiap akhir bulan Maret.
+-  Mengetahui adanya Hari Listrik Nasional (HLN) setiap tanggal 27 Oktober.
+-  Mengetahui adanya Jam Bumi / _Earth Hour_ setiap akhir bulan Maret. (Walaupun banyak spekulasi mengenai ini.)
 
 ### Daftar Berita
 
@@ -99,45 +96,46 @@ EUC/Kargupy 0.1-0.8
 
 Kargu 0.1
 
--  Membuat skema dan desain dasar
--  Mengumpulkan informasi dan bahan
--  Menambah [README](/README.mkd), [LICENSE](/LICENSE), dan [INSTALL](/INSTALL)
+-  Inisialisasi proyek dengan manajemen kode sumber (MKS) / [_source code management_ (SCM)](http://en.wikipedia.org/wiki/Source_code_management) [Git](http://git-scm.com) atau sistem pengendalian versi / _version control system_ (VCS) menggunakan rangka kerja [git-flow](https://github.com/nvie/gitflow).
+-  Membuat skema dan desain dasar.
+-  Mengumpulkan informasi dan bahan.
+-  Menambah [README](/README.mkd), [LICENSE](/LICENSE), dan [INSTALL](/INSTALL).
 -  Spesifikasi platform:
    - minimum API level 10r2, versi 2.3.3 [Gingerbread](http://developer.android.com/about/versions/android-2.3-highlights.html)
    - maksimum API level 16r4, versi 4.1.2 [Jelly Bean](http://developer.android.com/about/versions/jelly-bean.html)
--  Inisialiasi proyek dengan [Apache Maven™ 3.0.5](http://maven.apache.org) dan [Apache Ant™ 1.9.0](http://ant.apache.org)
--  Ditambah dengan [Android Maven Plugin 3.5.1](https://maven-android-plugin.googlecode.com)
--  Inisialisasi konfigurasi untuk [Jetbrains](http://jetbrains.org) [IntelliJ IDEA 12 CE](http://jetbrains.com/idea)
--  Dengan isi teks pengantar bahasa Indonesia
--  Kode sumber dan wiki dipublikasi di repositori GitHub
+-  Inisialiasi proyek dengan [Apache Maven™ 3.0.5](http://maven.apache.org) dan [Apache Ant™ 1.9.0](http://ant.apache.org).
+-  Ditambah dengan [Android Maven Plugin 3.5.1](https://maven-android-plugin.googlecode.com).
+-  Inisialisasi konfigurasi untuk [Jetbrains](http://jetbrains.org) [IntelliJ IDEA 12 CE](http://jetbrains.com/idea).
+-  Dengan isi teks pengantar bahasa Indonesia.
+-  Kode sumber dan wiki dipublikasi di repositori GitHub.
 
 Kargu 0.2
 
--  [Logo asli baru](/assets/logo/kargu_logo.png) dengan [logogram horizontal](/assets/logo/kargu_logo_text-hor.png) dan [vertikal](/assets/logo/kargu_logo_text-ver.png)
-   -  Skema: [Palet warna](/assets/logo/colors.mkd)
-   -  Fon: [SF Archery Black](http://fontsquirrel.com/fonts/SF-Archery-Black) oleh [ShyFoundry](http://shyfoundry.com/fonts/shareware/sfarcheryb.html)
--  Menggunakan pedoman konvensi gaya kode
+-  [Logo asli baru](/assets/logo/kargu_logo.png) dengan [logogram horizontal](/assets/logo/kargu_logo_text-hor.png) dan [vertikal](/assets/logo/kargu_logo_text-ver.png).
+   -  Skema: [Palet warna](/assets/logo/colors.mkd).
+   -  Fon: [SF Archery Black](http://fontsquirrel.com/fonts/SF-Archery-Black) oleh [ShyFoundry](http://shyfoundry.com/fonts/shareware/sfarcheryb.html).
+-  Menggunakan pedoman konvensi gaya kode:
    -  [Oracle Code Conventions for the Java Programming Language](http://oracle.com/technetwork/java/codeconv-138413.html)
    -  [Google Code Style Guide](http://google-styleguide.googlecode.com)
--  Pengaturan Maven yang lebih baik
--  Perubahan tata letak dan tema
--  Masukan dasar dengan tombol
--  Menambah beberapa _string_ dan terjemahannya
--  Menambah beberapa komentar dan mempersingkat penulisannya
--  Memungkinkan untuk mengembalikan nilai saat aplikasi dimulai kembali
--  Menambah petunjuk penggunaan
--  Menggunakan pengetesan ( _testing_ ) dengan [Calabash-Android](https://github.com/calabash/calabash-android) (berbasis [Cucumber](http://cukes.info))
+-  Pengaturan Maven yang lebih baik.
+-  Perubahan tata letak dan tema.
+-  Masukan dasar dengan tombol.
+-  Menambah beberapa teks _string_ dan terjemahannya.
+-  Menambah beberapa komentar dan mempersingkat penulisannya.
+-  Memungkinkan untuk mengembalikan nilai saat aplikasi dimulai kembali.
+-  Menambah petunjuk penggunaan.
+-  Menggunakan proses pengembangan yang didorong oleh tes (PDT) / _test-driven development_ (TTD) dengan [Calabash-Android](https://github.com/calabash/calabash-android) yang berbasis sintaks [Cucumber](http://cukes.info).
 
 Kargu x.x (TODO)
 
--  Layar muka / _splash screen_ sederhana
--  Antarmuka pengguna / _user interface_ dengan [HoloEverywhere](http://holoeverywhere.org) dan [ActionBarSherlock](http://actionbarsherlock.com)
--  Aset visual tambahan
--  Mengadakan
+-  Layar muka / _splash screen_ sederhana.
+-  Antarmuka pengguna / _user interface_ dengan [HoloEverywhere](http://holoeverywhere.org) dan [ActionBarSherlock](http://actionbarsherlock.com) untuk kompatibilitas dengan Android versi lama.
+-  Aset visual tambahan.
+-  Mengadakan:
    -  perihal aplikasi
    -  bantuan pengguna
    -  pengaturan pengguna
--  Menggunakan Integrasi Kontinu ([Continuous Integration (CI)](http://en.wikipedia.org/wiki/Continuous_integration)) [Travis-CI](https://travis-ci.org).
+-  Menggunakan Integrasi Kontinu (IK) / [_Continuous Integration_ (CI)](http://en.wikipedia.org/wiki/Continuous_integration) bernama [Travis-CI](https://travis-ci.org).
 
 
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
@@ -168,10 +166,10 @@ Di akhir pengguna bisa melakukan perhitungan ulang. Kemungkinan tidak adanya kos
 
 Inti penyelesaian agak berbeda dengan simulasi biaya oleh PLN atau tabel perhitungan lainnya. Dimana pada umumnya memerlukan informasi penggunaan per bulan yang sudah berlalu (untuk pelanggan listrik pascabayar), sedangkan aplikasi ini hanya memerlukan informasi umum yang telah diketahui secara mudah, baik pelanggan listrik prabayar atau pascabayar, yaitu:
 
-*  batas daya listrik rumah atau tempat tinggal
+*  batas daya listrik rumah atau tempat tinggal,
 *  beberapa alat elektronik yang sudah diketahui atau akan dipakai,
 *  jenis alat elektronik, atau
-*  daya yang dibutuhkan dan waktu penggunaannya berdasarkan perkiraan maksimum
+*  daya yang dibutuhkan dan waktu penggunaannya berdasarkan perkiraan maksimum.
 
 Masukan menjadi seperti:
 
@@ -227,7 +225,7 @@ Di akhir pengguna bisa melakukan perhitungan ulang. Dan rencananya bisa menyimpa
 Membangun
 ---------
 
-Untuk membangunnya direkomendasikan dengan spesifikasi kebutuhan ( _dependency_ ) berikut:
+Untuk membangunnya direkomendasikan dengan spesifikasi kebutuhan perangkat lunak / _software dependency_ berikut:
 
 -  Sistem operasi seperti Unix:
    -  Ubuntu
@@ -241,7 +239,7 @@ Untuk membangunnya direkomendasikan dengan spesifikasi kebutuhan ( _dependency_ 
 -  Ruby versi 2.0.0+ (untuk tes dengan Calabash)
 -  dan lainnya sesuai preferensi Anda
 
-Juga direkomendasikan dengan variabel alamat lintasan ( _path_ ) di konfigurasi shell (bash/zsh/dll) seperti berikut jika belum diatur:
+Juga direkomendasikan dengan variabel alamat lintasan / _path_ di konfigurasi shell (bash/zsh/dll) seperti berikut jika belum diatur:
 
 ```
 export ANDROID_HOME = "/alamat/lintasan/ke/android-sdk/"
@@ -261,7 +259,7 @@ Lalu jalankan dengan salah satu perintah berikut:
 
 -  `mvn clean package` untuk membuat APK saja
 -  `mvn clean install` untuk membuat APK dan menjalankan tes integrasi (membutuhkan perangkat Android di emulator atau nyata)
--  `ant clean debug` untuk membuat APK mode antikutu ( _debug_ ) saja
+-  `ant clean debug` untuk membuat APK mode antikutu / _debug_ saja
 
 Untuk hal pengembangan lain seperti:
 
@@ -270,7 +268,7 @@ Untuk hal pengembangan lain seperti:
    -  [Robotium](http://robotium.org)
 -  pengendali kebutuhan:
    -  [Roboguice](https://github.com/roboguice/roboguice)
--  pemecahan masalah ( _troubleshooting_ ):
+-  pemecahan masalah / _troubleshooting_:
    -  periksa kembali seluruh hal penting yang dibutuhkan
    -  cek jika ada kesalahan ketik
 
