@@ -27,8 +27,11 @@
     </licenses>
 
     <properties>
-        <platform.version> 4.1.1.4
-        </platform.version>
+        <platform.version>4.1.1.4</platform.version>
+        <maven.build.timestamp.format>yyMMddHHmm</maven.build.timestamp.format>
+        <versionCode>${maven.build.timestamp}</versionCode>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <buildNumber>0</buildNumber>
     </properties>
 
     <dependencies>
