@@ -1,2 +1,53 @@
-TODO
-Use `ant` or `mvn3` to build, clean, debug, or install.
+Membangun
+---------
+
+Untuk membangunnya direkomendasikan dengan spesifikasi kebutuhan perangkat lunak / _software dependency_ berikut:
+
+- Sistem operasi Linux atau seperti Unix:
+  - Ubuntu
+  - Mint
+  - Arch
+  - Mac OS X
+  - dll
+- Manajemen Kode Sumber (MKS) / _Source Code Management_ (SCM)
+  - Git dengan colokan Gitflow
+- IDE untuk Java seperti IntelliJ IDEA atau Eclipse
+- Ant versi 1.8.0+
+- Maven versi 3.0.0+
+- SDK (KPPL) Android versi 21+
+- Ruby versi 2.0.0+ (untuk tes dengan Calabash)
+- dan lainnya sesuai preferensi Anda
+
+Juga direkomendasikan dengan variabel alamat lintasan / _path_ di konfigurasi shell (bash/zsh/dll) seperti berikut jika belum diatur:
+
+```
+export ANDROID_HOME = "/alamat/lintasan/ke/android-sdk/"
+export ANDROID_TOOLS = "/alamat/lintasan/ke/android-sdk/tools/"
+export ANDROID_PTOOLS = "/alamat/lintasan/ke/android-sdk/platform-tools/"
+
+export JAVA_HOME="/usr/lib/jvm/java-7-oracle"
+export ANT_HOME = "/usr/local/apache-ant-1.8.4/"
+export MAVEN_HOME = "/usr/local/apache-maven-3.0.5/"
+export M3_HOME = "/usr/local/apache-maven-3.0.5/"
+export M3 = "/usr/local/apache-maven-3.0.5/"
+
+PATH=$PATH:$ANDROID_TOOLS:$ANDROID_PTOOLS:$ANT_HOME/bin:$MAVEN_HOME/bin:$M2_HOME/bin:$M2/bin
+```
+
+Gunakan `ant` atau `mvn` untuk membangun/_build_, membersihkan/_clean_, mengawakutu/_debug_, atau menginstal/_install_ dengan menjalankan dengan salah satu perintah berikut:
+
+- `ant clean debug` untuk membuat APK mode awakutu/_debug_ saja
+- `mvn clean package` untuk membuat APK saja
+- `mvn clean install` untuk membuat APK dan menjalankan tes integrasi (membutuhkan perangkat Android di emulator atau nyata)
+
+Untuk hal pengembangan lain seperti:
+
+- pengetesan:
+  - [Calabash](http://calaba.sh) versi 0.4.0+ (Instal dengan `sudo gem install calabash-android` jika belum ada)
+  - [Robotium](http://robotium.org)
+- pengendali kebutuhan:
+  - [Roboguice](https://github.com/roboguice/roboguice)
+- pemecahan masalah / _troubleshooting_:
+  - periksa kembali seluruh hal penting yang dibutuhkan
+  - cek jika ada kesalahan ketik
+
