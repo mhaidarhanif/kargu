@@ -4,7 +4,7 @@ Kargu
 
 Dokumentasi Kargu (lang=id-ID)
 
-Edisi aplikasi [Android](http://android.com)
+Edisi aplikasi Java _desktop_ dan [Android](http://android.com)
 
 [![Logo Kargu](https://raw.github.com/mhaidarh/kargu/develop/assets/logo/kargu_logo_text-hor_small.png)](https://github.com/mhaidarh/kargu "Logo Kargu Berwarna")
 [![Status Buat](https://secure.travis-ci.org/mhaidarh/kargu.png)](http://travis-ci.org/mhaidarh/kargu/ "Status pembuatan dari Travis CI")
@@ -15,20 +15,19 @@ Subnama     = Kalkulator Perkiraan Penggunaan
 Nama Edisi  = Energi Listrik
 Judul       = Kargu, kalkulator untuk memperkiraan penggunaan energi listrik serta mencanangkan budaya hemat energi
 Judul Alt.  = Kargu, mencanangkan budaya hemat energi dengan memperkiraan penggunaan energi listrik
-Deskripsi Pendek  = Kargu adalah aplikasi kalkulator untuk memperkiraan penggunaan energi listrik yang bisa untuk variasi pelanggan prabayar atau pascabayar serta mencanangkan budaya hemat energi dengan aturan biaya oleh PLN.
-Deskripsi Panjang = Terdapat di [deskripsi](/#deskripsi)
-Tanggal     = 2013-03-XX XX:XX:XX
-Foto Produk = ./screen/kargu_x.x_screen-hr.png
-Berkas APK  = ./bin/Kargu_x.x.apk
-Kategori    = Energi, Edukasi, Budaya, Referensi, Perkakas
+Deskripsi   = Kargu adalah aplikasi kalkulator untuk memperkiraan penggunaan energi listrik yang bisa untuk variasi pelanggan prabayar atau pascabayar serta mencanangkan budaya hemat energi dengan aturan biaya oleh PLN.
+Diagram     = ./diagram/*/kargu_*.uxf & kargu_*.png
+Tampilan    = ./screen/kargu_x.x_screen-*.png
+Berkas APK  = ./bin/Kargu_x.x.apk | ./target/kargu.apk
+Kategori    = Energi, Perkakas, Edukasi, Referensi, Budaya
 ```
 
 
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 
 
-Deskripsi
----------
+Pendahuluan
+-----------
 
 **Kar·gu** /kargu/ _n_
 
@@ -54,7 +53,7 @@ Perlu diketahui bahwa banyak sekali aplikasi seperti ini dalam berbagai bentuk s
 
 Kontribusi sangat disambut dalam bentuk dan ukuran apa saja seperti:
 
-- kode program, fitur, perbaikan, terjemahan: Silakan ['garpu'](https://github.com/mhaidarh/kargu/fork_select) / _fork_ proyek ini lalu [kirim permintaan tarik](https://github.com/mhaidarh/kargu/pull/new/develop) / _pull request_ di cabang / _branch_ develop.
+- kode program, fitur, perbaikan, terjemahan: Silakan ['garpu' / _fork_](https://github.com/mhaidarh/kargu/fork_select) proyek ini lalu kirim [permintaan tarik / _pull request_](https://github.com/mhaidarh/kargu/pull/new/develop) di cabang / _branch_ develop.
 - dokumentasi: Silakan edit/sunting [laman dokumentasi/wiki](https://github.com/mhaidarh/kargu/wiki).
 - isu, komentar, permintaan, laporan kerusakan: Silakan tulis di [laman isu](https://github.com/mhaidarh/kargu/issues).
 - berkas multimedia seperti gambar, suara, dan lain-lain: Silakan kirim ke [surel / _email_ ini](mailto:mhaidarhanif@gmail.com).
@@ -188,7 +187,7 @@ Berkas gambar, visual, dan suara dirilis di bawah lisensi [Creative Commons Attr
   - RoboGuice
 - dan lain-lain
 
-Bahan, referensi, atau tautan yang belum disebutkan di sini terdapat di [berkas pengembangan](misc/docs/development.mkd) atau mungkin tersebar di beberapa berkas teks berekstensi `.mkd`.
+Bahan, referensi, atau tautan yang belum disebutkan di sini terdapat di [berkas pengembangan](misc/docs/development.mkd) atau mungkin tersebar di beberapa berkas teks berekstensi `.mkd` dan tanpa ekstensi.
 
 
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *

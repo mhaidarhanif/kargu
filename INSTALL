@@ -8,13 +8,14 @@ Untuk membangunnya direkomendasikan dengan spesifikasi kebutuhan perangkat lunak
   - Mint
   - Arch
   - Mac OS X
-  - dll
-- Manajemen Kode Sumber (MKS) / _Source Code Management_ (SCM)
+- Manajemen Kode Sumber (MKS) / _Source Code Management_ (SCM):
   - Git dengan colokan Gitflow
-- IDE untuk Java seperti IntelliJ IDEA atau Eclipse
-- Ant versi 1.8.0+
-- Maven versi 3.0.0+
-- SDK (KPPL) Android versi 21+
+- IDE untuk Java:
+  - IntelliJ IDEA
+  - Eclipse
+- Apache Ant versi 1.8.0+
+- Apache Maven versi 3.0.0+
+- KPPL (SDK) Android versi 21+
 - Ruby versi 2.0.0+ (untuk tes dengan Calabash)
 - dan lainnya sesuai preferensi Anda
 
@@ -34,19 +35,21 @@ export M3 = "/usr/local/apache-maven-3.0.5/"
 PATH=$PATH:$ANDROID_TOOLS:$ANDROID_PTOOLS:$ANT_HOME/bin:$MAVEN_HOME/bin:$M2_HOME/bin:$M2/bin
 ```
 
-Gunakan `ant` atau `mvn` untuk membangun/_build_, membersihkan/_clean_, mengawakutu/_debug_, atau menginstal/_install_ dengan menjalankan dengan salah satu perintah berikut:
+Gunakan `ant` atau `mvn` untuk membangun / _build_, membersihkan / _clean_, mengawakutu / _debug_, atau menginstal / _install_ dengan menjalankan dengan salah satu perintah berikut:
 
-- `ant clean debug` untuk membuat APK mode awakutu/_debug_ saja
+- `ant clean debug` untuk membuat APK mode awakutu/ _debug_ saja
 - `mvn clean package` untuk membuat APK saja
 - `mvn clean install` untuk membuat APK dan menjalankan tes integrasi (membutuhkan perangkat Android di emulator atau nyata)
 
 Untuk hal pengembangan lain seperti:
 
 - pengetesan:
-  - [Calabash](http://calaba.sh) versi 0.4.0+ (Instal dengan `sudo gem install calabash-android` jika belum ada)
+  - [Calabash](http://calaba.sh) versi 0.4.3+ (Instal dengan [`sudo gem install calabash-android`](https://rubygems.org/gems/calabash-android) jika belum ada)
   - [Robotium](http://robotium.org)
 - pengendali kebutuhan:
   - [Roboguice](https://github.com/roboguice/roboguice)
+- integrasi kontinu:
+  - [Travis-CI](https://travis-ci.org)
 - pemecahan masalah / _troubleshooting_:
   - periksa kembali seluruh hal penting yang dibutuhkan
   - cek jika ada kesalahan ketik
