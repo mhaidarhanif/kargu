@@ -3,16 +3,18 @@ Membangun
 
 Untuk membangunnya direkomendasikan dengan spesifikasi kebutuhan perangkat lunak / _software dependency_ berikut:
 
-- Sistem operasi Linux atau seperti Unix:
+- Sistem operasi Linux (pada distro) atau seperti Unix:
   - Ubuntu
   - Mint
   - Arch
+  - OpenBSD
   - Mac OS X
+  - dll
 - Manajemen Kode Sumber (MKS) / _Source Code Management_ (SCM):
-  - Git dengan colokan Gitflow
+  - Git dengan colokan / _plugin_ Gitflow
 - IDE untuk Java:
-  - IntelliJ IDEA
-  - Eclipse
+  - IntelliJ IDEA 12+
+  - Eclipse 4+
 - Apache Ant versi 1.8.0+
 - Apache Maven versi 3.0.0+
 - KPPL (SDK) Android versi 21+

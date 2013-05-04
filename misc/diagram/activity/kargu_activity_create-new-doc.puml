@@ -1,0 +1,31 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMembuat Dokumen Baru\n
+
+start
+
+:Memilih menu "Berkas";
+:Memilih menu "Buat Dokumen Baru";
+
+if (Ada dokumen aktif?) then (Ya)
+  :<Mengecek kondisi perubahan>;
+else (Tidak)
+endif
+
+:Menampilkan dialog form nama dokumen;
+:Mengisi form nama dokumen;
+
+if (Pilihan?) then (Oke)
+  :<Mengecek kondisi validitas form>;
+  :Membuat dokumen baru;
+else (Batal)
+endif
+
+:Dialog form nama ditutup;
+:Kembali ke dasbor;
+
+stop
+
+@enduml

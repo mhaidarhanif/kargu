@@ -1,0 +1,23 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMenyimpan Dokumen\n
+
+start
+
+:Memilih menu "Berkas";
+:Memilih menu "Simpan";
+:<Mengetahui lokasi penyimpanan>;
+
+if (Tahu?) then (Ya)
+  :Menyimpan dokumen ke berkas\ndi lokasi yang diketahui;
+else (Tidak)
+  :<Menyimpan dokumen sebagai>;
+endif
+
+:Kembali ke dasbor;
+
+stop
+
+@enduml

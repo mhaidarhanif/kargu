@@ -1,0 +1,32 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMewaspadai Ketersediaan\n
+
+start
+
+:Mengetahui hal yang harus ada tersedia;
+
+fork
+  :Entri;
+fork again
+  :Laman;
+fork again
+  :Berkas;
+fork again
+  :Lokasi penyimpanan;
+fork again
+  :Lainnya;
+end fork
+
+:<Mengecek ketersediaan hal yang harus ada>;
+
+if (Tersedia?) then (Ya)
+else (Tidak)
+  :Memberi tahu bahwa yang\nharus ada tidak tersedia;
+endif
+
+stop
+
+@enduml

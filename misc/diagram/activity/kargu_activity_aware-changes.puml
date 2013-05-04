@@ -1,0 +1,35 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMewaspadai Perubahan\n
+
+start
+
+:Mengetahui ada hal yang berubah;
+
+fork
+  :Entri;
+fork again
+  :Laman;
+fork again
+  :Lainnya;
+end fork
+
+:<Mengecek adanya perubahan>;
+
+if (Ada?) then (Ya)
+  if (Perlu penawaran?) then (Ya)
+    :<Menawarkan;
+    fork
+      :Penyimpanan>;
+    fork again
+      :Pengembalian>;
+    end fork
+  else (Tidak)
+  endif
+endif
+
+stop
+
+@enduml

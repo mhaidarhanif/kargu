@@ -1,0 +1,36 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMengedit Entri\n
+
+start
+
+:Memilih Entri yang akan diedit;
+:Memilih tombol "Edit";
+:<Mengecek adanya entri yang dipilih>;
+
+if (Ada entri) then (Ya)
+  :Tombol "Edit" dinonaktifkan;
+  :Form entri diaktifkan;
+  :Mengedit form entri;
+  :<Mewaspadai perubahan\nentri yang dipilih>;
+  if (Pilih) then (Oke)
+    :<Mewaspadai validitas form>;
+    if (Valid) then (Ya)
+      :Mengedit entri yang dipilih;
+      :<Menandai adanya perubahan>;
+    else (Tidak)
+      :Memberitahu bahwa\nentri tidak valid;
+    endif
+  else (Batal)
+  endif
+:Form entri dinonaktifkan;
+:Tombol "Edit" diaktifkan;
+else (Tidak)
+  :Memberitahu tidak ada\nentri yang dipilih;
+endif
+
+stop
+
+@enduml

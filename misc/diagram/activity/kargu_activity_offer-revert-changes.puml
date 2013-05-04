@@ -1,0 +1,31 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMenawarkan Pengembalian Perubahan\n
+
+start
+
+:Mengetahui hal yang akan dilakukan;
+:<Mengecek kondisi perubahan>;
+
+if (Ada perubahan?) then (Ya)
+  :Menawarkan pengembalian penyimpanan;
+  if (Pengembalian?) then (Ya)
+    :<Melakukan pengembalian>;
+    :Melakukan hal yang akan dilakukan;
+  else
+    if (Lainnya) then (Tidak)
+      :Tidak melakukan pengembalian;
+      :Melakukan hal yang akan dilakukan;
+    else (Batal)
+      :Tidak jadi melakukan hal\nyang akan dilakukan;
+    endif
+  endif
+  :Kembali ke dasbor;
+else (Tidak)
+endif
+
+stop
+
+@enduml

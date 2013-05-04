@@ -1,0 +1,26 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMengecek Kondisi\n
+
+start
+
+:Mengetahui hal yang harus dicek;
+
+fork
+  :Validasi;
+fork again
+  :Perubahan;
+  :Menandai;
+fork again
+  :Ketersediaan;
+fork again
+  :Penghapusan;
+end fork
+
+:<Melakukan fungsi sesuai hal yang harus dicek>;
+
+stop
+
+@enduml

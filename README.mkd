@@ -26,26 +26,13 @@ Kategori    = Energi, Perkakas, Edukasi, Referensi, Budaya
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 
 
-Pendahuluan
------------
+### Informasi Terkait
 
-**Kar·gu** /kargu/ _n_
-
-Kargu, disingkat dari [Ka]lkulator Perki[r]aan Peng[gu]naan, adalah aplikasi kalkulator sederhana dengan penyesuaian pendekatan ketetapan biaya oleh PLN dan undang-undang yang berlaku. Bermula dari keraguan pada kala ingin membeli dan alat elektronik baru, perlu tahu tagihan yang akan didapat nantinya jika pascabayar atau pulsa yang harus disiapkan jika prabayar.
-
-Pada awalnya bertujuan utama untuk memperkiraan dengan perhitungan terdekat, sehingga belum menggunaan pendekatan simulasi secara nyata. Jadi hanya mencatat penggunaan rata-rata sehari dan mengalikannya untuk sebulan. Sehingga bukan mencatat penggunaan setiap hari dalam sebulan, walaupun fitur tersebut mungkin akan didukung nanti. Akan dilengkapi dengan ekstensi/perluasan pengetahuan budaya nasional (Indonesia) dalam penggunaan listrik sehari-hari di berbagai tempat, golongan tarif, dan kegunaan. Masih dibuat khusus untuk penggunaan energi listrik dan amat sederhana. Tapi jika diperlukan dapat diperluas dengan energi bahan bakar minyak, gas, dan lain-lain.
-
-Kemampuan dan nilai masih dibatasi oleh informasi perhitungan dari PLN dan pemerintah yang belum terbuka dan diketahui secara mudah untuk publik. Sehingga sebagian besar menggunakan perkiraan terdekat yang umumnya dipakai. Juga memang saat ini untuk mempercepat pengembangan awal belum ada pemilihan golongan tarif dengan simbol seperti Rumah Tangga (R1, R2, R3), Sosial (S1, S2), Bisnis (B1, B2), dan lainnya. Lagipula akan lebih memudahkan pengguna untuk memulai tanpa harus mengetahui walaupun bisa agak mengurangi akurasi.
-
-Dibuat berdasarkan pengalaman akan keraguan perhitungan untuk memperkirakan biaya dari penggunaan listrik secara manual. Sebagian besar pengguna atau pelanggan listrik ingin mengetahui dan seharusnya mengetahui lebih mengenai tagihan atau biaya yang perlu disiapkan per bulan tanpa harus berada pada kondisi setelah satu bulan pemakaian listrik. Sehingga bisa menjadi alternatif untuk mengatasi keraguan jika terdapat alat elektronik baru dalam lingkungan yang digunakan. Perlu diketahui bahwa ini masih dalam tahap eksperimen dan bertujuan utama untuk edukasi karena berawal dari tugas pembelajaran.
-
-Perlu diketahui bahwa banyak sekali aplikasi seperti ini dalam berbagai bentuk seperti situs web, aplikasi, dan cara manual. Tapi yang ditekankan dalam aplikasi ini adalah penyesuaian dengan aturan PLN serta preferensi jenis layanan prayabar dan pascabayar. Terlebih lagi proyek ini lebih digagas dengan serius namun tetap santai dan dikembangkan secara terbuka.
-
-### Informasi Tambahan
-
+- Bahasan lain seperti pendahuluan, tips hemat energi terdapat dalam [berkas dokumen keperluan](misc/docs/requirements.mkd).
 - Dokumentasi seperti petunjuk penggunaan terdapat di [laman dokumentasi/wiki](https://github.com/mhaidarh/kargu/wiki).
 - Kode sumber aplikasi ini dirilis secara terbuka / _open source_ dalam repositori [Kargu di GitHub](https://github.com/mhaidarh/kargu) dan diberikan secara bebas di bawah [Lisensi MIT](/LICENSE).
-- Sejarah perkembangan proyek terdapat di berkas [Log Perubahan](/CHANGELOG).
+- Sejarah perkembangan proyek terdapat di berkas [Log Perubahan (CHANGELOG)](/CHANGELOG).
+- Catatan dan cara untuk pengembang dalam pembangunan dan penginstalan terdapat di berkas [Instalasi (INSTALL)](/INSTALL).
 - Kode sumber perintis, proyek Kargupy, terdapat dalam repositori [Kargupy di GitHub](https://github.com/mhaidarh/kargupy).
 - Proyek ini dibuat awal oleh [M Haidar Hanif](https://github.com/mhaidarh). Lengkapnya silakan baca berkas [AUTHORS](AUTHORS).
 
@@ -59,109 +46,6 @@ Kontribusi sangat disambut dalam bentuk dan ukuran apa saja seperti:
 - berkas multimedia seperti gambar, suara, dan lain-lain: Silakan kirim ke [surel / _email_ ini](mailto:mhaidarhanif@gmail.com).
 
 Harap menggunakan bahasa Inggris untuk pesan perubahan / _commit message_ agar lebih mudah diakses untuk pengembangan. Nanti jika diterima maka akan termasuk dalam rilis stabil selanjutnya dan Anda akan diberi kredit.
-
-### Tips hemat energi
-
-Catatan untuk orang umum, khususnya Indonesia.
-
-- Membuat kebiasaan hemat energi menjadi budaya nasional.
-- Menggunakan peralatan listrik seperlunya.
-- Membiasakan mengecek meteran secara berkala.
-- Menyiapkan pulsa/token listrik untuk berjaga-jaga bagi pelanggan listrik prabayar.
-- Menghindari biaya keterlambatan (BK) dengan bersiap setiap bulan atau beralih ke langganan listrik prabayar.
-- Mengcegah penyalahgunaan listrik oleh orang lain.
-- Mengotomatisasi alat elektronik dengan menjadwalkan proses. Seperti di komputer atau ponsel yang terdapat aplikasi untuk menjadwalkan kapan sistemnya akan dihibernasi / _hibernate_ atau dimatikan / _shut down_ secara otomatis setelah pemakaian tertentu. Sehingga baterai dan penggunaan energi lebih irit.
-- Mencegah putusya arus listrik secara tiba-tiba dengan mengetahui batas daya listrik.
-- Mengetahui adanya Penertiban Pemakaian Tenaga Listrik (P2TL).
-- Mengetahui adanya Hari Listrik Nasional (HLN) setiap tanggal 27 Oktober.
-- Mengetahui adanya Jam Bumi / _Earth Hour_ setiap akhir bulan Maret. (Walaupun banyak spekulasi mengenai ini.)
-
-### Daftar Berita
-
-- [Catatan Hari Listrik Nasional Ke-67](http://finance.detik.com/read/2012/10/27/121041/2073884/1034/catatan-hari-listrik-nasional-ke-67)
-- [Budaya Penggunaan Listrik yang Baik Karena Pengetahuan yang Baik](http://id.shvoong.com/writing-and-speaking/presenting/2160587-budaya-penggunaan-listrik-yang-baik)
-- [Budaya Hemat Energi Menjaga Kelangsungan Kelistrikan Nasional](http://palembang.tribunnews.com/m/index.php/08/03/2011/budaya-hemat-energi--menjaga-kelangsungan-kelistrikan-nasional)
-
-
-*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-
-
-Alur Skema
-----------
-
-### Skema Simulasi Listrik oleh PLN
-
-Simulasi yang diberikan oleh [Perusahaan Listrik Negara (PT PLN)](http://www.pln.co.id) yaitu [Simulasi Listrik](http://www.pln.co.id/simulasi/tagihan/index.php) memerlukan data pelanggan listrik pascabayar dan hanya dapat mengambil masukan berupa:
-
-*  golongan tarif tanpa simbol
-*  batas daya dalam volt ampere (VA)
-*  jumlah pemakaian dalam kiloWatt per jam (kWh)
-
-Lalu memberikan keluaran berupa:
-
-*  biaya beban dalam kilovolt ampere per bulan (kVA/bulan)
-*  biaya abonemen dalam Rupiah (Rp)
-*  jumlah pemakaian dalam kiloWatt per jam (kWh)
-*  biaya beban dalam Rupiah (Rp)
-*  biaya total dalam Rupiah (Rp)
-
-Di akhir pengguna bisa melakukan perhitungan ulang. Kemungkinan tidak adanya kostumisasi adalah saat itu belum banyak yang menggunakan listrik prabayar.
-
-### Skema Perkiraan oleh Kargu
-
-Inti penyelesaian agak berbeda dengan simulasi biaya oleh PLN atau tabel perhitungan lainnya. Dimana pada umumnya memerlukan informasi penggunaan per bulan yang sudah berlalu (untuk pelanggan listrik pascabayar), sedangkan aplikasi ini hanya memerlukan informasi umum yang telah diketahui secara mudah, baik pelanggan listrik prabayar atau pascabayar, yaitu:
-
-*  batas daya listrik rumah atau tempat tinggal,
-*  beberapa alat elektronik yang sudah diketahui atau akan dipakai,
-*  jenis alat elektronik, atau
-*  daya yang dibutuhkan dan waktu penggunaannya berdasarkan perkiraan maksimum.
-
-Masukan menjadi seperti:
-
-**Tabel Masukan**
-
-| Variabel     | Ukuran      | Nilai | Blok    |
-| ------------ |:-----------:| -----:| ------- |
-| Daya Listrik | Volt Ampere |  2200 | Pickers |
-| Elektronik   | Watt        |   100 | Text    |
-|              | Jam         |    24 | Pickers |
-
-Hasilnya adalah informasi detail mengenai:
-
-*  perbandingan budaya penggunaan daya listrik dengan daerah sekitar,
-*  daftar alat elektronik dan atributnya, serta
-*  beberapa nilai Watt, kWh, biaya, harga, tagihan, pajak, dan total biaya yang sebaiknya disiapkan; dalam ukuran waktu jam, harian, dan bulanan.
-
-Keluaran menjadi seperti:
-
-**Tabel Hitung**
-
-| Variabel     | Ukuran      | Nilai |
-| ------------ |:-----------:| -----:|
-| Daya Listrik | Volt Ampere |  2200 |
-| Elektronik   | Watt        |   100 |
-|              | Jam         |    24 |
-|              | Watt/Jam    |  2400 |
-| Total        | Watt/Jam    |   100 |
-| Pengunaan    | Watt/Hari   |  2400 |
-|              | kWh/Hari    |   2.4 |
-|              | kWh/Bulan   |  72.0 |
-
-**Tabel Biaya**
-
-| Variabel           | Ukuran      | Nilai  |
-| ------------------ |:-----------:| ------:|
-| Biaya Langganan    | Rupiah      |  59400 |
-| Harga/kWh          | Rupiah      |    650 |
-| Biaya/Bulan xPajak |             |        |
-|    Prabayar        | Rupiah      |  46800 |
-|    Pascabayar      | Rupiah      | 106200 |
-| Pajak/Bulan        | Persen      |     10 |
-| Biaya/Bulan        |             |        |
-|    Prabayar        | Rupiah      |  51480 |
-|    Pascabayar      | Rupiah      | 116820 |
-
-Di akhir pengguna bisa melakukan perhitungan ulang. Dan rencananya bisa menyimpan data masukan dan hasil laporan yang didapat.
 
 
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
@@ -187,13 +71,5 @@ Berkas gambar, visual, dan suara dirilis di bawah lisensi [Creative Commons Attr
   - RoboGuice
 - dan lain-lain
 
-Bahan, referensi, atau tautan yang belum disebutkan di sini terdapat di [berkas pengembangan](misc/docs/development.mkd) atau mungkin tersebar di beberapa berkas teks berekstensi `.mkd` dan tanpa ekstensi.
+Bahan, referensi, atau tautan yang belum disebutkan di sini terdapat di [berkas pengembangan](misc/docs/development.mkd) dan [berkas dokumen keperluan](misc/docs/requirements.mkd). Beberapa mungkin tersebar di berkas teks berekstensi `.mkd`, `.txt`, atau tanpa ekstensi.
 
-
-*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-
-
-*  [KARGU]: Kalkulator Perkiraan Penggunaan
-*  [P2TL]: Penertiban Pemakaian Tenaga Listrik
-*  [HLN]: Hari Listrik Nasional
-*  [MIT]: Massachusetts Institute of Technology

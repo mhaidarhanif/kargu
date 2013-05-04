@@ -11,106 +11,102 @@ Identity
 --------
 
 Color:
--  Black
--  Gray
--  White
--  Orange
--  Yellow
+- Black
+- Gray
+- White
+- Orange
+- Yellow
 
 Shape:
--  Square
--  Electricity
--  Plus Minus
+- Square
+- Electricity
+- Plus Minus
 
 Style:
--  Minimalistic
+- Minimalistic
 
-* * * * * * * * * * * * * * * * * * * *
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 
 Resources
 ---------
 
 Images
+
 Sound
 
-* * * * * * * * * * * * * * * * * * * *
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 
 Information
 -----------
 
 ### Development
 
-http://developer.android.com
-https://developers.google.com
-- Android Developet Tools Bundle 21
+- https://developer.android.com
+- https://developers.google.com
+- Android Developer Tools Bundle 21
 - Android SDK Platform API level 10, 16, 17
 - Android Samples
 
-http://android-ui-utils.googlecode.com
-- Android UI Utilities
+- [Android UI Utilities](http://android-ui-utils.googlecode.com)
 - Android Asset Studio
+- [Android Patterns](http://androidpttrns.com)
 
-http://androidpttrns.com
-- Android Patterns
-
-http://eclipse.org
-- Eclipse Juno
+- http://eclipse.org
+- Eclipse
 - EGit
 
-http://jetbrains.com/idea
-- https://github.com/JetBrains/intellij-community
-- IntelliJ IDEA 12 Community Edition
+- [IntelliJ IDEA 12](http://jetbrains.com/idea) [Community Edition](https://github.com/JetBrains/intellij-community)
 
-http://pencil.evolus.vn
-- Evolus Pencil
+- [Evolus Pencil](http://pencil.evolus.vn)
 
-http://android.stackexchange.com
+- [UMLet](http://umlet.com)
+
+- http://android.stackexchange.com
 - Android Enthusiasts
 
-http://commonsware.com
+- http://commonsware.com
 - The Busy Coder’s Guide to Android Development
 
-http://it-ebooks.info
+- http://it-ebooks.info
 - IT Ebooks
 
 ### Design
 
-http://fluidui.com
-- Fluid UI
+- [Fluid UI](http://fluidui.com)
 
 ### Book
 
-https://pragprog.com
-http://ofps.oreilly.com
+- https://pragprog.com
+- http://ofps.oreilly.com
 
 ### Documentation
 
-https://developers.android.com
+- https://developers.android.com
 
 ### Forum
 
-https://groups.google.com/group/android-developers
-http://xda-developers.com
-http://mobile.tutsplus.com/category/tutorials/android
+- https://groups.google.com/group/android-developers
+- http://xda-developers.com
+- http://mobile.tutsplus.com/category/tutorials/android
 
 ### Tools
 
-bash
-Git
-Vim
-Gedit
-Sublime Text 2
-TextAdept
+- bash
+- Git
+- Vim
+- Gedit
+- Sublime Text 2
+- TextAdept
 
-Apache Maven
-Apache Ant
-Android Maven Plugin
+- Apache Maven
+- Apache Ant
+- Android Maven Plugin
 
 ### Others
 
-http://androidbootstrap.com
-http://mobiledesignpatterngallery.com
-http://holoeverywhere.com
-http://mycolorscreen.com
-https://saucelabs.com
+- http://androidbootstrap.com
+- http://mobiledesignpatterngallery.com
+- http://holoeverywhere.com
+- http://mycolorscreen.com
+- https://saucelabs.com
 

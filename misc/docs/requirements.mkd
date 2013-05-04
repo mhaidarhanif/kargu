@@ -1,0 +1,341 @@
+% Dokumen Keperluan Aplikasi Kargu
+% M Haidar Hanif <<mhaidarhanif@gmail.com>>
+
+- Versi: 0.1 (April 2013)
+- Status: Draf Publik
+- Untuk: Pembaca umum dan teknis di Indonesia
+
+
+Deskripsi
+=========
+
+
+Pengenalan
+----------
+
+**Kar•gu** /kargu/ _n_
+
+Kargu, disingkat dari [Ka]lkulator Perki[r]aan Peng[gu]naan, adalah aplikasi kalkulator sederhana dengan penyesuaian pendekatan ketetapan biaya oleh PLN dan undang-undang yang berlaku. Bermula dari keraguan pada kala ingin membeli dan alat elektronik baru, perlu tahu tagihan yang akan didapat nantinya jika pascabayar atau pulsa yang harus disiapkan jika prabayar.
+
+
+Tujuan
+------
+
+Pada awalnya bertujuan utama untuk memperkiraan dengan perhitungan terdekat, sehingga belum menggunaan pendekatan simulasi secara nyata. Jadi hanya mencatat penggunaan rata-rata sehari dan mengalikannya untuk seb ulan. Sehingga bukan mencatat penggunaan setiap hari dalam sebulan, walaupun fitur tersebut mungkin akan didukung nanti. Akan dilengkapi dengan ekstensi/perluasan pengetahuan budaya nasional (Indonesia) dalam penggunaan listrik sehari-hari di berbagai tempat, golongan tarif, dan kegunaan. Masih dibuat khusus untuk penggunaan energi listrik dan amat sederhana. Tapi jika diperlukan dapat diperluas dengan energi bahan bakar minyak/gas, cahaya matahari, dan lain-lain.
+
+
+Cakupan
+-------
+
+Kemampuan dan nilai masih dibatasi oleh informasi perhitungan dari PLN dan pemerintah yang belum terbuka dan diketahui secara mudah untuk publik. Sehingga sebagian besar menggunakan perkiraan terdekat yang umumnya dipakai. Juga memang saat ini untuk mempercepat pengembangan awal belum ada pemilihan golongan tarif dengan simbol seperti Rumah Tangga (R1, R2, R3), Sosial (S1, S2), Bisnis (B1, B2), dan lainnya. Lagipula akan lebih memudahkan pengguna untuk memulai tanpa harus mengetahui walaupun bisa agak mengurangi akurasi.
+
+Dibuat berdasarkan pengalaman akan keraguan perhitungan untuk memperkirakan biaya dari penggunaan listrik secara manual. Sebagian besar pengguna atau pelanggan listrik ingin mengetahui dan seharusnya mengetahui lebih mengenai tagihan atau biaya yang perlu disiapkan per bulan tanpa harus berada pada kondisi setelah satu bulan pemakaian listrik. Sehingga bisa menjadi alternatif untuk mengatasi keraguan jika terdapat alat elektronik baru dalam lingkungan yang digunakan. Perlu diketahui bahwa ini masih dalam tahap eksperimen dan bertujuan utama untuk edukasi karena berawal dari tugas pembelajaran.
+
+Perlu diketahui bahwa banyak sekali aplikasi seperti ini dalam berbagai bentuk seperti situs web, aplikasi, dan cara manual. Tapi yang ditekankan dalam aplikasi ini adalah penyesuaian dengan aturan PLN serta preferensi jenis layanan prayabar dan pascabayar. Terlebih lagi proyek ini lebih digagas dengan serius namun tetap santai serta dikembangkan secara terbuka.
+
+
+Target
+------
+
+Diutamakan untuk pengguna umum dalam kehidupan rumah tangga maupun tempat tinggal berskala kecil. Untuk ke depan diharapkan dapat lebih dikembangkan untuk berbagai kalangan dan golongan tarif. Pengguna aplikasi umumnya merupakan orang yang peduli terhadap penggunaan dan biaya listrik secara kasual atau serius. Termasuk juga Pengembang, desainer, dan orang umum yang bisa ikut serta dalam mengembangkan, memperbaiki, dan meningkatkan kualitas aplikasi.
+
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+
+Spesifikasi
+===========
+
+
+- Aplikasi = Aplikasi Kargu _desktop_ atau _mobile_
+- Pengguna = Pengguna akhir aplikasi Kargu
+- Pengembang = Pengembang aplikasi Kargu bagian depan atau belakang
+
+
+Entitas
+-------
+
+### Perintah Baris (CLI)
+
+Aplikasi dapat menghitung dari informasi masukan secara sekuensial. Pengguna dapat memasukkan nilai batas daya rumah atau tempat tinggal. Lalu banyaknya alat elektronik yang ingin disertakan. Serta atribut daya listrik (Watt) dan waktu penggunaan (Hour) untuk tiap alat elektronik tersebut.
+
+Aplikasi akhirnya dapat memberi laporan informasi berupa batas daya listrik, daftar alat elektronik dan atributnya, serta seluruh informasi penting lainnya terutama biaya dengan rumusnya dalam berbagai ukuran.
+
+Aplikasi dapat mengulang proses jika pengguna mengizinkan.
+
+### Antarmuka Pengguna Grafis (GUI)
+
+Aplikasi terdiri dari satu dasbor utama, beberapa pilihan menu pada jendela, beberapa tombol perintah dan navigasi, kotak dialog untuk mengisi dan memperbarui informasi, serta beberapa elemen lain yang akan ditambahkan.
+
+Aplikasi dapat mengelola berkas yang disebut "dokumen catatan" yang dapat memiliki beberapa kumpulan informasi elektronik yang disebut "laman catatan". Satu laman catatan tersebut dapat memiliki satu atau lebih catatan informasi penggunaan listrik dalam satu rumah yang disebut "entri elektronik". Satu entri elektronik tersebut menyimpan informasi yang harus terdapat nomor identitas (ID), daya listrik (Watt), waktu pemakaian (Hour). Informasi yang didapat tidak harus sangat tepat tapi minimal mendekati kenyataan dan harus diketahui oleh pengguna.
+
+Aplikasi akan menampilkan nama dokumen pada jendela dasbor utama sesuai dengan teks yang dimasukkan saat membuat dokumen baru atau berdasarkan nama berkas dokumen tersebut pada disk.
+
+Aplikasi memiliki pilihan menu standar seperti Baru (New), Buka (Open), Tutup (Close), Simpan (Save), Simpan Sebagai (Save As), dan Berhenti (Quit).
+
+Aplikasi dapat mengubah atau memperbarui informasi yang terdapat dalam laman catatan atau satu entri elektronik, tapi tanpa mengubah ID yang berkaitan.
+
+Aplikasi dapat menghapus laman catatan atau entri elektronik. Pengguna dapat menghapus dokumen catatan secara manual melalui pengelola atau penjelajah berkas yang terdapat pada sistem operasi, bukan melalui aplikasi.
+
+Aplikasi dapat menyimpan dokumen baru dengan menu Simpan Sebagai (Save As...) lalu pengguna menspesifikasikan lokasi penyimpanan. Sedangkan dokumen yang sudah pernah tersimpan dengan menu Simpan (Save) tanpa menspesifikasikan lokasi penyimpanan.
+
+Aplikasi jika memungkinkan dapat mengurutkan entri elektronik berdasarkan ID, jenis, nama, daya listrik, atau waktu elektronik.
+
+Aplikasi jika memungkinkan dapat membolehkan agar untuk satu entri elektronik, pengguna hanya perlu memilih jenis alat elektronik (seperti lampu, kulkas, televisi, radio, komputer, pompa air, AC, dan lain-lain). Walaupun mungkin bisa agak membatasi jangkauan kemungkinan. Sehingga diperlukan pilihan terpisah, yaitu pasti dan kustomisasi.
+
+Aplikasi jika memungkinkan dapat bekerja untuk beberapa dokumen catatan dalam satu waktu. Sehingga jika memilih menu Baru (New) atau Buka (Open), dokumen catatan yang sedang terbuka tidak tertutup.
+
+Aplikasi jika memungkinkan dapat melacak/memonitor perubahan yang terjadi pada dokumen catatan, laman catatan, atau entri eletronik sejak terakhir disimpan. Aplikasi akan menawarkan untuk menyimpan perubahan saat dokumen atau laman ingin ditutup (Close), aplikasi ingin diberhentikan (Quit), serta pengguna ingin membuat (New) atau membuka (Open) dokumen baru. 
+
+
+Proses
+------
+
+Versi _desktop_ CLI:
+
+- Menjalankan aplikasi secara langsung.
+- Mengisi dan memasukkan informasi.
+- Melihat laporan informasi.
+- Menutup aplikasi dengan memilih `T` (jika dalam bahasa Indonesia) di akhir proses ataupun gabungan perintah untuk menutup.
+
+Versi _desktop_ GUI:
+
+- Menjalankan aplikasi secara langsung.
+- Membuat atau membuka dokumen catatan baru.
+- Membuat laman catatan baru.
+- Mengisi entri elektronik ke dalam laman catatan.
+- Menyimpan dan tabel data hasil ke dalam disk.
+- Menutup aplikasi dengan memilih menu `Tutup`, `Berhenti` ataupun tombol tutup (seperti `X` atau lingkaran merah) pada jendela / _window_ aplikasi.
+
+Versi _mobile_ GUI:
+
+- Menjalankan aplikasi secara langsung.
+- TODO
+- Menutup aplikasi dengan memilih menu `Tutup` ataupun tombol tutup (seperti `back` atau sejenisnya) pada perangkat.
+
+
+Skema
+-----
+
+Dua skema pertama berikut juga merupakan perbandingan sudut pandang dan cara penyelesaiannya.
+
+### Skema Simulasi oleh PLN
+
+Simulasi daring / _online_ yang diberikan oleh [Perusahaan Listrik Negara (PT PLN)](http://www.pln.co.id) yaitu [Simulasi Listrik](http://www.pln.co.id/simulasi/tagihan/index.php) memerlukan data pelanggan listrik pascabayar dan mengambil masukan berupa:
+
+- golongan tarif tanpa simbol
+- batas daya dalam volt ampere (VA)
+- jumlah pemakaian dalam kiloWatt per jam (kWh)
+
+Lalu memberikan keluaran berupa:
+
+- biaya beban dalam kilovolt ampere per bulan (kVA/bulan)
+- biaya abonemen dalam Rupiah (Rp)
+- jumlah pemakaian dalam kiloWatt per jam (kWh)
+- biaya beban dalam Rupiah (Rp)
+- biaya total dalam Rupiah (Rp)
+
+Di akhir pengguna bisa melakukan perhitungan ulang. Kemungkinan tidak adanya kostumisasi adalah saat itu belum banyak yang menggunakan listrik prabayar.
+
+### Skema Perkiraan oleh Kargu
+
+Inti penyelesaian agak berbeda dengan simulasi biaya oleh PLN atau tabel perhitungan lainnya. Dimana pada umumnya memerlukan informasi penggunaan per bulan yang sudah berlalu (untuk pelanggan listrik pascabayar). Sedangkan aplikasi ini hanya memerlukan informasi umum yang telah diketahui secara mudah, baik pelanggan listrik prabayar atau pascabayar yaitu:
+
+- batas daya listrik rumah atau tempat tinggal,
+- beberapa alat elektronik yang sudah diketahui atau akan dipakai,
+- jenis alat elektronik, atau
+- daya yang dibutuhkan dan waktu penggunaannya berdasarkan perkiraan maksimum.
+
+Masukan menjadi seperti:
+
+**Tabel Masukan**
+
+```
+| Variabel     | Ukuran      | Nilai | Blok    |
+| ------------ |:-----------:| -----:| ------- |
+| Daya Listrik | Volt Ampere |  2200 | Pickers |
+| Elektronik   | Watt        |   100 | Text    |
+|              | Jam         |    24 | Pickers |
+```
+
+Hasilnya adalah informasi detail mengenai:
+
+- perbandingan budaya penggunaan daya listrik dengan daerah sekitar,
+- daftar alat elektronik dan atributnya, serta
+- beberapa nilai seperti Watt, kWh, biaya, harga, tagihan, pajak, dan total biaya yang sebaiknya disiapkan; dalam ukuran waktu jam, harian, dan bulanan.
+
+Keluaran menjadi seperti:
+
+**Tabel Hitung**
+
+```
+| Variabel     | Ukuran      | Nilai |
+| ------------ |:-----------:| -----:|
+| Daya Listrik | Volt Ampere |  2200 |
+| Elektronik   | Watt        |   100 |
+|              | Jam         |    24 |
+|              | Watt/Jam    |  2400 |
+| Total        | Watt/Jam    |   100 |
+| Pengunaan    | Watt/Hari   |  2400 |
+|              | kWh/Hari    |   2.4 |
+|              | kWh/Bulan   |  72.0 |
+```
+
+**Tabel Biaya**
+
+```
+| Variabel           | Ukuran      | Nilai  |
+| ------------------ |:-----------:| ------:|
+| Biaya Langganan    | Rupiah      |  59400 |
+| Harga/kWh          | Rupiah      |    650 |
+| Biaya/Bulan xPajak |             |        |
+|    Prabayar        | Rupiah      |  46800 |
+|    Pascabayar      | Rupiah      | 106200 |
+| Pajak/Bulan        | Persen      |     10 |
+| Biaya/Bulan        |             |        |
+|    Prabayar        | Rupiah      |  51480 |
+|    Pascabayar      | Rupiah      | 116820 |
+```
+
+Di akhir pengguna bisa melakukan perhitungan ulang. Juga bisa menyimpan data masukan dan hasil laporan yang didapat.
+
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+
+Tambahan
+========
+
+
+Sistem
+------
+
+Bahasa pemrograman utama yang digunakan adalah Java Standard Edition, OpenJDK Java 7 ataupun Oracle Java 7 untuk _desktop_.
+
+
+Platform
+--------
+
+Dapat digunakan di perangkat _desktop_ dengan sistem operasi apapun yang terdapat dengan Mesin Virtual Java (MVJ) / _Java Virtual Machine_ (JVM) dan perangkat gemerak / _mobile_ dengan sitem operasi Android.
+
+
+Keamanan
+--------
+
+Data belum memerlukan atau mengandung informasi kritis pribadi dari pengguna.
+
+
+Jaringan
+--------
+
+Basis data yang digunakan masih bersifat lokal dan hanya disimpan dalam disk yang luring / _offline_ dan itu pun jika dikehendaki oleh pengguna akhir.
+
+
+Integrasi
+---------
+
+Belum ada rencana integrasi antar aplikasi lain.
+
+
+Lingkungan
+----------
+
+Sistem operasi apapun dengan dukungan lingkungan pengembangan berbahasa pemrograman Java.
+
+
+Dukungan
+--------
+
+Belum ada dukungan spesifik.
+
+
+Interaksi
+---------
+
+Interaksi dasar dengan tombol sederhana yang pada umumnya mudah dioperasikan.
+
+
+Asumsi
+------
+
+- Pengguna aplikasi merupakan pelanggan PLN pada tingkat rumah tangga.
+- Pengguna aplikasi dapat mengoperasikan komputer dan berbahasa Indonesia.
+- TODO
+
+
+Kendala
+-------
+
+Pengguna aplikasi belum mengetahui beberapa dasar pengetahuan penting mengenai perhitungan dan pembayaran listrik pada umumnya.
+
+
+Aksesibilitas
+-------------
+
+Antarmuka aplikasi diharapkan sangat mudah dilihat mata dan digunakan oleh siapapun.
+
+
+Internasionalisasi
+------------------
+
+Bahasa utama menggunakan bahasa Indonesia yang kemudian disusul oleh bahasa Inggris dan lainnya.
+
+
+Lokalisasi
+----------
+
+Bahasa pengantar adalah bahasa yang umum digunakan. Sebisa mungkin menghindari istilah yang jarang diketahui. Jika ada harus disertakan dalam glosarium.
+
+
+Rencana
+-------
+
+### Lini Masa dan Kejadian Penting
+
+Terdapat di berkas [Log Perubahan (CHANGELOG)](/CHANGELOG).
+
+### Evaluasi Rencana dan Metrik Kinerja
+
+Akan ada setelah pengembangan selesai.
+
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+
+Referensi
+=========
+
+
+Tips hemat energi
+-----------------
+
+Catatan untuk orang umum, khususnya Indonesia.
+
+- Membuat kebiasaan hemat energi menjadi budaya nasional.
+- Menggunakan peralatan listrik seperlunya.
+- Membiasakan mengecek meteran secara berkala.
+- Menyiapkan pulsa/token listrik untuk berjaga-jaga bagi pelanggan listrik prabayar.
+- Menghindari biaya keterlambatan (BK) dengan bersiap setiap bulan atau beralih ke langganan listrik prabayar.
+- Mengcegah penyalahgunaan listrik oleh orang lain.
+- Mengotomatisasi alat elektronik dengan menjadwalkan proses. Seperti di komputer atau ponsel yang terdapat aplikasi untuk menjadwalkan kapan sistemnya akan dihibernasi / _hibernate_ atau dimatikan / _shut down_ secara otomatis setelah pemakaian tertentu. Sehingga baterai dan penggunaan energi lebih irit.
+- Mencegah putusya arus listrik secara tiba-tiba dengan mengetahui batas daya listrik.
+- Mengetahui adanya Penertiban Pemakaian Tenaga Listrik (P2TL).
+- Mengetahui adanya Hari Listrik Nasional (HLN) setiap tanggal 27 Oktober.
+- Mengetahui adanya Jam Bumi / _Earth Hour_ setiap akhir bulan Maret. (Walaupun banyak spekulasi mengenai ini.)
+
+
+Daftar Berita
+-------------
+
+- [Catatan Hari Listrik Nasional Ke-67](http://finance.detik.com/read/2012/10/27/121041/2073884/1034/catatan-hari-listrik-nasional-ke-67)
+- [Budaya Penggunaan Listrik yang Baik Karena Pengetahuan yang Baik](http://id.shvoong.com/writing-and-speaking/presenting/2160587-budaya-penggunaan-listrik-yang-baik)
+- [Budaya Hemat Energi Menjaga Kelangsungan Kelistrikan Nasional](http://palembang.tribunnews.com/m/index.php/08/03/2011/budaya-hemat-energi--menjaga-kelangsungan-kelistrikan-nasional)
+
+
+*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+
+
+* [Kargu]: Kalkulator Perkiraan Penggunaan
+* [P2TL]: Penertiban Pemakaian Tenaga Listrik
+* [HLN]: Hari Listrik Nasional
+* [MIT]: Massachusetts Institute of Technology

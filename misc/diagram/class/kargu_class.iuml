@@ -1,0 +1,13 @@
+@startuml
+
+skinparam shadowing false
+skinparam classAttributeIconSize 10
+
+skinparam class {
+	FontName Courier
+	BackgroundColor LightCyan
+	BorderColor DarkCyan
+	ArrowColor DarkCyan
+}
+
+@enduml

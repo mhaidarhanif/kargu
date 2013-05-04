@@ -1,0 +1,31 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMenambah Entri\n
+
+start
+
+:Memilih tombol "Tambah";
+
+:Tombol "Tambah" dinonaktifkan;
+:Form entri diaktifkan;
+:Mengisi form entri;
+
+if (Pilihan?) then (Selesai)
+  :<Mengecek kondisi validitas form>;
+  if (Valid?) then (Ya)
+    :Membuat entri baru;
+    :<Menandai adanya perubahan>;
+  else (Tidak)
+    :Memberitahu bahwa\nentri tidak valid;
+  endif
+else (Batal)
+endif
+
+:Form entri dinonaktifkan;
+:Tombol "Tambah" diaktifkan;
+
+stop
+
+@enduml

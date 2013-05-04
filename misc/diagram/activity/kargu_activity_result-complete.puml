@@ -1,0 +1,22 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMelihat Hasil Lengkap\n
+
+start
+
+:Memilih tombol "Lengkap" dari grup "Hasil";
+
+if (Ada entri?) then (Ya)
+  :<Melakukan perhitungan dan penyusunan lengkap>;
+  :Hasil lengkap disimpan;
+  :Form hasil lengkap diaktifkan;
+  :Hasil lengkap ditempatkan pada\nboks teks form hasil lengkap;
+else (Tidak)
+  :Memberitahu bahwa entri tidak ada;
+endif
+
+stop
+
+@enduml

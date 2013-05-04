@@ -1,0 +1,25 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMenghapus Entri\n
+
+start
+
+:Memilih Entri yang akan dihapus;
+:Memilih tombol "Hapus";
+:<Mengecek adanya entri yang dipilih>;
+
+if (Ada entri) then (Ya)
+  :<Mewaspadai penghapusan\nentri yang dipilih>;
+  if (Lanjut) then (Ya)
+    :Menghapus entri yang dipilih;
+  else (Tidak)
+  endif
+else (Tidak)
+  :Memberitahu tidak ada\nentri yang dipilih;
+endif
+
+stop
+
+@enduml

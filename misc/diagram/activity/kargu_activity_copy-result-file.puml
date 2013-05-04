@@ -1,0 +1,24 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMenyalin Hasil ke Berkas\n
+
+start
+
+:Memilih tombol dari grup "Hasil";
+
+if (Hasil muncul?) then (Ya)
+  :Memilih tombol "Salin ke Berkas";
+  :<Mengetahui lokasi penyimpanan>;
+  if (Tahu?) then (Ya)
+    :Menyalin hasil ke berkas\ndi lokasi yang diketahui;
+  else (Tidak)
+  endif
+  :Kembali ke form hasil;
+else (Tidak)
+endif
+
+stop
+
+@enduml

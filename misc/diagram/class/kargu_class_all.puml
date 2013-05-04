@@ -1,0 +1,35 @@
+@startuml
+
+!include kargu_class.iuml
+
+title <b>Kargu</b> | Diagram Kelas\nEntitas & Hubungan Antar Objek\n
+
+class KarguApp
+class KarguGUI
+class KarguCLI
+class Controller
+class Database
+class InputForm 
+class Document
+class Page
+class Entry
+enum TimeUnit
+
+KarguApp *-- "1" Controller
+KarguApp *-- "1" Database
+
+Controller ..> InputForm
+Controller o-- Database
+
+Controller *-- "1" KarguGUI
+Controller *-- "1" KarguCLI
+
+TimeUnit .r.> Document
+Controller ..> Document
+Database ..> Document : manages >
+KarguGUI -- "1" Document : displays >
+
+Document "1" o-- "1..*" Page : contains >
+Page "1" o-- "*" Entry : contains >
+
+@enduml

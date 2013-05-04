@@ -1,0 +1,214 @@
+@startuml
+
+!include kargu_class.iuml
+
+title <b>Kargu</b> | Diagram Kelas\nEntitas & Hubungan Antar Objek (Detail)\n
+
+class KarguApp {
+  -db: Database
+  -control: Controller
+  +quitApp(): void
+  +main(String args[]): void
+}
+
+class KarguGUI {
+  -control: Controller
+  -document: Document
+  -entryListModel: AbstractTableModel
+  -entryList: JTable
+
+  -menuBar: JMenuBar
+
+  -fileMenu: JMenu
+  -newDocumentItem: JMenuItem
+  -newPageItem: JMenuItem
+  -openDocumentItem: JMenuItem
+  -saveDocumentItem: JMenuItem
+  -saveDocumentAsItem: JMenuItem
+  -printDocumentItem: JMenuItem
+  -closeDocumentItem: JMenuItem
+  -closePageItem: JMenuItem
+  -quitAppItem: JMenuItem
+  
+  -dataMenu: JMenu
+  -addEntryItem: JMenuItem
+  -editEntryItem: JMenuItem
+  -deleteEntryItem: JMenuItem
+  -clearEntryItem: JMenuItem
+  -resultCompleteItem: JMenuItem
+  -resultShortItem: JMenuItem
+  
+  -helpMenu: JMenu
+  -manualItem: JMenuItem
+  -aboutItem: JMenuItem
+
+  -settingsLabel: JLabel
+  -classLabel: JLabel
+  -classChoose: JComboBox    
+  -powerLabel: JLabel
+  -powerBox: JTextBox
+
+  -entryLabel: JLabel
+  -addEntryButton: JButton
+  -editEntryButton: JButton
+  -deleteEntryButton: JButton
+  -clearEntryButton: JButton
+
+  -resultLabel: JLabel
+  -resultCompleteButton: JButton
+  -resultShortButton: JButton
+
+  +KarguGUI(final Controller control, Document document, Page page): constructor
+  +setDocument(Document document): void
+  +getDocument(): Document
+  +result(String out): void
+  +reportError(String message): void
+  +update(Observable o, Object arg): void
+
+  ~powerChooseActionPerformed(ActionEvent evt): void
+  ~newPageActionPerformed(ActionEvent evt): void
+  ~addEntryActionPerformed(ActionEvent evt): void
+  ~editEntryActionPerformed(ActionEvent evt): void
+  ~deleteEntryActionPerformed(ActionEvent evt): void
+  ~clearEntryActionPerformed(ActionEvent evt): void
+  ~resultCompleteActionPerformed(ActionEvent evt): void
+  ~resultShortActionPerformed(ActionEvent evt): void
+}
+
+class KarguCLI {
+  -control: Controller
+  -document: Document
+  -entryListModel:
+  -entryList:
+}
+
+class Controller {
+  -db: Database
+
+  +Controller(Database db): ctor
+  +doAdd(KarguGUI gui): void
+  +doEdit(KarguGUI gui, String id): void
+  +doDelete(KarguGUI gui, String id): void
+  +doClear(KarguGUI gui, String id): void
+  +doPrint(KarguGUI gui): void
+  +doNew(KarguGUI gui): void
+  +doOpen(KarguGUI gui): void
+  +doSave(KarguGUI gui): void
+  +doSaveAs(KarguGUI gui): void
+  +doOfferSaveChanges(KarguGUI gui): void
+}
+
+class Database {
+  +readFile(File file): Document
+  +saveFile(Document document, File file): void
+  +showInputForm(Component parent, String[] prompts, String[] init, String title): String
+  ~inputForm(String[] prompts, String[] init)
+}
+
+class InputForm {
+
+}
+
+class Document {
+  -collection: Entry[] or Vector
+  -file: File
+  -changed: boolean
+  -title: String
+  -class: String
+  -power: int
+  -result: String
+
+  +Document(): constructor
+  +Document(String title, String class, String power, boolean changed): constructor
+
+  +setFile(File file): void
+  +getFile(): File
+  
+  +setTitle(String title): String
+  +getTitle(): String
+  
+  +setClass(): String
+  +getClass(): String
+  
+  +setPower(): int
+  +getPower(): int
+
+  +setChanged(boolean changed): void
+  +getChanged(): boolean
+
+  +editDocument(String title, String class, String power, boolean changed): void
+
+  ~setupTest(): void  
+}
+
+class Page {
+  -title: String
+  -totalEntry: int
+
+  +Page(): constructor
+  +Page(String title): constructor
+
+  +getID(): String
+  +getTitle(): String
+  +getTotalEntry(): int
+  +getSelectedEntry(): Entry
+
+  +setResult(): String
+  +getResultComplete(): String
+  +getResultShort(): String
+  
+  +printSystemAll(): String
+  +printFrameAll(): String
+
+  +editPage(String title): void
+}
+
+class Entry {
+  -id: String
+  -name: String
+  -type: String
+  -qty: int
+  -watt: Float
+  -hour: Float
+
+  +Entry(): constructor
+  +Entry(String id, String name, String type, int qty, Float watt, Float hour): constructor
+
+  +getID(): String
+  +getName(): String
+  +getType(): String
+  +getQty(): int
+  +getWatt(): int
+  +getHour(): int
+
+  +update(String id, String name, String type, int qty, Float watt, Float hour): void
+}
+
+enum TimeUnit {
+  MONTHS = <12
+  DAYS = <30
+  HOURS = <24
+  MINUTES = <60
+  SECONDS = <60
+}
+
+KarguApp *-- "1" Controller
+KarguApp *-- "1" Database
+
+Controller ..> InputForm
+Controller o-- Database
+
+Controller *-- "1" KarguGUI
+Controller *-- "1" KarguCLI
+
+TimeUnit .r.> Document
+Controller ..> Document
+Database ..> Document : manages >
+KarguGUI -- "1" Document : displays >
+
+Document "1" o-- "1..*" Page : contains >
+Page "1" o-- "*" Entry : contains >
+
+'hide members
+
+@enduml

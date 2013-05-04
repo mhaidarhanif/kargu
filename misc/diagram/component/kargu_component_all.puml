@@ -1,0 +1,9 @@
+@startuml
+
+!include kargu_component.iuml
+
+title <b>Kargu</b> | Diagram Komponen\n
+
+
+
+@enduml

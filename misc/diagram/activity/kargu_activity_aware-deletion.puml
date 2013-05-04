@@ -1,0 +1,26 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMewaspadai Penghapusan\n
+
+start
+
+:Mengetahui apa yang akan dihapus;
+
+fork
+  :Entri;
+fork again
+  :Laman;
+fork again
+  :Lainnya;
+end fork
+
+if (Tahu?) then (Ya)
+  :Memberi tahu yang akan dihapus;
+else (Tidak)
+endif
+
+stop
+
+@enduml

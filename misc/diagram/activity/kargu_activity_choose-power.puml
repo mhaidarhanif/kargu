@@ -1,0 +1,15 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMemilih Batas Daya\n
+
+start
+
+:Memilih salah satu nilai dari boks kumpulan "Batas Daya";
+:Isi nilai batas daya dibaca dan disimpan;
+:<Menandai adanya perubahan>;
+
+stop
+
+@enduml

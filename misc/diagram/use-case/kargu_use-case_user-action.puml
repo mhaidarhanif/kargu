@@ -1,0 +1,83 @@
+@startuml
+
+!include kargu_use-case.iuml
+
+title <b>Kargu</b> | Diagram Kasus Penggunaan\nAksi Pengguna\n
+
+User << Human >> as "Pengguna"
+
+(AddEntry) << Data >> as "Menambah Entri"
+(EditEntry) << Data >> as "Mengedit Entri"
+(DeleteEntry) << Data >> as "Menghapus Entri"
+(SortEntry) << Data >> as "Mengurutkan Entri"
+(ClearEntry) << Data >> as "Mengosongkan Entri"
+
+(ChooseClassRate) << Data >> as "Memilih Golongan Tarif"
+(ChoosePower) << Data >> as "Memilih Batas Daya"
+(ResultComplete) << Data >> as "Melihat Hasil Lengkap"
+(ResultShort) << Data >> as "Melihat Hasil Singkat"
+(CopyResult) << Data >> as "Menyalin Hasil"
+(CopyResultFile) << Data >> as "Menyalin Hasil ke Berkas"
+
+(CreateNewDoc) << File >> as "Membuat Dokumen Baru"
+(CreateNewPage) << File >> as "Membuat Laman Baru"
+(OpenDoc) << File >> as "Membuka Dokumen"
+(SaveDoc) << File >> as "Menyimpan Dokumen"
+(SaveDocAs) << File >> as "Menyimpan Dokumen Sebagai"
+(PrintDoc) << File >> as "Mencetak Dokumen"
+(CloseDoc) << File >> as "Menutup Dokumen"
+(ClosePage) << File >> as "Menutup Laman"
+(QuitApp) << Application >> as "Memberhentikan Aplikasi"
+
+(CheckCondition) << File >> as "Mengecek Kondisi"
+(OfferSave) << File >> as "Menawarkan Menyimpan Perubahan"
+(OfferRevert) << File >> as "Menawarkan Pengembalian Perubahan"
+(AwareValidation) << Data >> as "Mewaspadai Validasi"
+(AwareAvailability) << Data >> as "Mewaspadai Ketersediaan"
+(AwareChanges) << Data >> as "Mewaspadai Perubahan"
+(AwareDeletion) << Data >> as "Mewaspadai Penghapusan"
+
+left to right direction
+
+User -u- (CopyResultFile)
+User -u- (CopyResult)
+User -u- (ResultShort)
+User -u- (ResultComplete)
+User -u- (ChoosePower)
+User -u- (ChooseClassRate)
+
+User -u- (ClearEntry)
+User -u- (SortEntry)
+User -u- (DeleteEntry)
+User -u- (EditEntry)
+User -u- (AddEntry)
+
+User -- (CreateNewDoc)
+User -- (CreateNewPage)
+User -- (OpenDoc)
+User -- (SaveDoc)
+User -- (SaveDocAs)
+User -- (PrintDoc)
+User -- (CloseDoc)
+User -- (ClosePage)
+User -- (QuitApp)
+
+(CopyResultFile) ..> (CopyResult) : <<includes>>
+(ResultComplete) ..> (ResultShort) : <<includes>>
+(SaveDoc) ..> (SaveDocAs) : <<includes>>
+(OfferSave) .u.> (CheckCondition) : <<extends>>
+(OfferRevert) .u.> (CheckCondition) : <<extends>>
+(AwareValidation) .u.> (CheckCondition) : <<extends>>
+(AwareAvailability) .u.> (CheckCondition) : <<extends>>
+(AwareChanges) .u.> (CheckCondition) : <<extends>>
+(AwareDeletion) .u.> (CheckCondition) : <<extends>>
+
+(CheckCondition) .u.> (CreateNewPage) : <<extends>>
+(CheckCondition) .u.> (CreateNewDoc) : <<extends>>
+(CheckCondition) .u.> (OpenDoc) : <<extends>>
+(CheckCondition) .u.> (SaveDoc) : <<includes>>
+(CheckCondition) .u.> (ClosePage) : <<extends>>
+(CheckCondition) .u.> (CloseDoc) : <<extends>>
+(CheckCondition) .u.> (QuitApp) : <<extends>>
+
+@enduml

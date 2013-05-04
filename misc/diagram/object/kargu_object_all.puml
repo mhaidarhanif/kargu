@@ -1,0 +1,9 @@
+@startuml
+
+!include kargu_object.iuml
+
+title <b>Kargu</b> | Diagram Objek\n
+
+
+
+@enduml
