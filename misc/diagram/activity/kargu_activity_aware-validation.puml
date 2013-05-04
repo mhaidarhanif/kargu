@@ -1,0 +1,22 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMewaspadai Validasi\n
+
+start
+
+:Mengetahui hal yang harus divalidasi;
+
+if (Ada hal?) then (Ya)
+  fork
+    :Isi form;
+  fork again
+    :Lainnya;
+  end fork
+else (Tidak)
+endif
+
+stop
+
+@enduml

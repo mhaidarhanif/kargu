@@ -1,0 +1,24 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMengosongkan Entri\n
+
+start
+
+:Memilih tombol "Kosong";
+:<Mengecek adanya entri>;
+
+if (Ada entri) then (Ya)
+  :<Mewaspadai penghapusan\nseluruh entri dalam laman>;
+  if (Lanjut) then (Ya)
+    :Menghapus seluruh entri dalam laman;
+  else (Tidak)
+  endif
+else (Tidak)
+  :Memberitahu entri sudah kosong;
+endif
+
+stop
+
+@enduml

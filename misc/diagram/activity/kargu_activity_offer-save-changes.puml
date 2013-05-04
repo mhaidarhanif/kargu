@@ -1,0 +1,31 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMenawarkan Penyimpanan Perubahan\n
+
+start
+
+:Mengetahui hal yang akan dilakukan;
+:<Mengecek kondisi perubahan>;
+
+if (Ada perubahan?) then (Ya)
+  :Menawarkan penyimpanan;
+  if (Simpan?) then (Ya)
+    :<Melakukan penyimpanan>;
+    :Melakukan hal yang akan dilakukan;
+  else
+    if (Lainnya) then (Tidak)
+      :Tidak melakukan penyimpanan;
+      :Melakukan hal yang akan dilakukan;
+    else (Batal)
+      :Tidak jadi melakukan hal\nyang akan dilakukan;
+      :Kembali ke dasbor;
+    endif
+  endif
+else (Tidak)
+endif
+
+stop
+
+@enduml

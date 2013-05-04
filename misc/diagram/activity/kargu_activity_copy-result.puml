@@ -1,0 +1,18 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMenyalin Hasil\n
+
+start
+
+:Memilih tombol dari grup "Hasil";
+
+if (Hasil muncul?) then (Ya)
+  :Dapat menyalin hasil dari boks teks;
+else (Tidak)
+endif
+
+stop
+
+@enduml

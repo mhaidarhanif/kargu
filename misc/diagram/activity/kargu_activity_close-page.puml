@@ -1,0 +1,23 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMenutup Laman\n
+
+start
+
+:Memilih tombol "x" pada laman;
+:<Mengecek kondisi perubahan>;
+:Menutup laman;
+
+if (Ada laman aktif lain?) then (Ya)
+  :Menampilkan laman lain tersebut;
+else (Tidak)
+  :Tidak menampilkan apa-apa;
+endif
+
+:Kembali ke dasbor;
+
+stop
+
+@enduml

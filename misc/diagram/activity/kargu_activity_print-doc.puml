@@ -1,0 +1,21 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMencetak Dokumen\n
+
+start
+
+:Memilih menu "Cetak Dokumen";
+
+if (Ada laman aktif?) then (Ya)
+  :<Mencetak semua laman>;
+else (Tidak)
+  :Memberitahu bahwa tidak\nada laman yang aktif;
+endif
+
+:Kembali ke dasbor;
+
+stop
+
+@enduml

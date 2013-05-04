@@ -1,0 +1,34 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMembuka Dokumen\n
+
+start
+
+:Memilih menu "Berkas";
+:Memilih menu "Buka Dokumen";
+
+:<Menggunakan penjelajah berkas>;
+:<Mengecek adanya berkas yang dipilih>;
+
+if (Ada berkas?) then (Ya)
+  :<Mengecek kondisi validitas berkas>;
+  if (Valid?) then (Ya)
+    if (Ada dokumen aktif?) then (Ya)
+      :<Mengecek kondisi perubahan>;
+      :<Menutup dokumen aktif>;
+    else (Tidak)
+    endif
+    :Memuat dokumen berkas ke dasbor;
+  else (Tidak)
+    :Memberitahu bahwa berkas\ntidak valid;
+  endif
+else (Tidak)
+endif
+
+:Kembali ke dasbor;
+
+stop
+
+@enduml

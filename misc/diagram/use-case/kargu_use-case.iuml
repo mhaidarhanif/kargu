@@ -1,0 +1,20 @@
+@startuml
+
+skinparam shadowing false
+
+skinparam usecase {
+	FontName Courier
+	ActorFontName Courier
+	BackgroundColor LightCyan
+	BorderColor DarkCyan
+	ArrowColor DarkCyan
+	ActorBackgroundColor<< Human >> Gold
+	ActorBackgroundColor<< System >> Gray
+	ActorBackgroundColor<< Data >> LightGreen
+	ActorBorderColor DarkCyan
+	BackgroundColor<< Application >> LightCoral
+	BackgroundColor<< File >> LightBlue
+	BackgroundColor<< Data >> LightGreen
+}
+
+@enduml

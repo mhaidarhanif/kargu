@@ -1,0 +1,26 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMembuat Laman Baru\n
+
+start
+
+:Memilih menu "Berkas";
+:Memilih menu "Laman Baru";
+
+:Menampilkan dialog form nama laman;
+:Mengisi form nama laman;
+
+if (Pilihan?) then (Oke)
+  :<Mengecek kondisi validitas form>;
+  :Membuat laman baru;
+else (Batal)
+endif
+
+:Dialog form nama ditutup;
+:Kembali ke dasbor;
+
+stop
+
+@enduml

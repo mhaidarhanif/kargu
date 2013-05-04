@@ -1,0 +1,12 @@
+@startuml
+
+skinparam shadowing false
+
+skinparam state {
+	FontName Courier
+	BackgroundColor LightCyan
+	BorderColor DarkCyan
+	ArrowColor DarkCyan
+}
+
+@enduml

@@ -1,0 +1,23 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMenyimpan Dokumen Sebagai\n
+
+start
+
+:Memilih menu "Berkas";
+:Memilih menu "Simpan Sebagai";
+
+if (Ada dokumen aktif?) then (Ya)
+  :<Menggunakan penjelajah berkas>;
+  :Menyimpan dokumen ke berkas\ndengan lokasi dari penjelajah;
+else (Tidak)
+  :Memberi tahu bahwa tidak ada\ndokumen yang bisa disimpan;
+endif
+
+:Kembali ke dasbor;
+
+stop
+
+@enduml

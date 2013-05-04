@@ -1,0 +1,168 @@
+@startuml
+
+!include kargu_state.iuml
+
+title <b>Kargu</b> | Diagram Keadaan\nGolongan Tarif\nBiaya Sesuai Daya Listrik\n
+
+state PRE AS "Prasyarat"
+PRE : Hitungan awal
+
+state S as "Sosial" {
+  state S1 as "S-1/TR 220 VA"
+  state S2 as "S-2/TR 450 VA"
+  state S3 as "S-2/TR 900 VA"
+  state S4 as "S-2/TR 1300 VA"
+  state S5 as "S-2/TR 2200 VA"
+  state S6 as "S-2/TR 3500 VA"
+  state S7 as "S-3/TM >200 KVA"
+  
+  S1 : PB = - \nBP = 14800
+  S2 : PB = 325 \nBP = 360 \nBB = 10000
+  S3 : PB = 455 \nBP = 360 \nBB = 15000
+  S4 : PB = 654 \nBP = 654 \nBB = RM1
+  S5 : PB = 703 \nBP = 703 \nBB = RM1
+  S6 : PB = 824 \nBP = 824 \nBB = RM1
+  S7 : PB = - \nBP = 839 \nBB = RM2
+
+  S1 -d-> S2
+  S2 -d-> S3
+  S3 -d-> S4
+  S4 -d-> S5
+  S5 -d-> S6
+  S6 -d-> S7
+}
+
+state R as "Rumah" {
+  state R1 as "R-1/TR 450 VA"
+  state R2 as "R-2/TR 900 VA"
+  state R3 as "R-2/TR 1300 VA"
+  state R4 as "R-2/TR 2200 VA"
+  state R5 as "R-2/TR 3500 VA"
+  state R6 as "R-3/TR >=6600 KVA"
+
+  R1 : PB = 415 \nBP = 495 \nBB = 11000
+  R2 : PB = 605 \nBP = 495 \nBB = 20000
+  R3 : PB = 879 \nBP = 879 \nBB = RM1
+  R4 : PB = 893 \nBP = 893 \nBB = RM1
+  R5 : PB = 1009 \nBP = 1009 \nBB = RM1
+  R6 : PB = 1342 \nBP = 1380 \nBB = RM2
+
+  R1 -d-> R2
+  R2 -d-> R3
+  R3 -d-> R4
+  R4 -d-> R5
+  R5 -d-> R6
+}
+
+state B as "Bisnis" {
+  state B1 as "B-1/TR 450 VA"
+  state B2 as "B-1/TR 900 VA"
+  state B3 as "B-1/TR 1300 VA"
+  state B4 as "B-1/TR 2200 VA"
+  state B5 as "B-2/TR 6600 VA"
+  state B6 as "B-3/TM >200 KVA"
+
+  B1 : PB = 535 \nBP = 420 \nBB = 23500
+  B2 : PB = 630 \nBP = 465 \nBB = 26500
+  B3 : PB = 876 \nBP = 876 \nBB = RM1
+  B4 : PB = 998 \nBP = 998 \nBB = RM1
+  B5 : PB = 1316 \nBP = 1380 \nBB = RM2
+  B6 : PB = - \nBP = 1013 \nBB = RM3
+
+  B1 -d-> B2
+  B2 -d-> B3
+  B3 -d-> B4
+  B4 -d-> B5
+  B5 -d-> B6
+}
+
+state I as "Industri" {
+  state I1 as "I-1/TR 450 VA"
+  state I2 as "I-1/TR 900 VA"
+  state I3 as "I-1/TR 1300 VA"
+  state I4 as "I-1/TR 2200 VA"
+  state I5 as "I-1/TR 3500 VA"
+  state I6 as "I-2/TR >14 KVA"
+  state I7 as "I-3/TM >200 KVA"
+  state I8 as "I-4/TT >30000 KVA"
+
+  I1 : PB = 485 \nBP = 395 \nBB = 25000
+  I2 : PB = 600 \nBP = 405 \nBB = 31500
+  I3 : PB = 843 \nBP = 843 \nBB = RM1
+  I4 : PB = 871 \nBP = 871 \nBB = RM1
+  I5 : PB = 1009 \nBP = 1009 \nBB = RM1
+  I6 : PB = - \nBP = 959 \nBB = RM2
+  I7 : PB = - \nBP = 783 \nBB = RM2
+  I8 : PB = - \nBP = 654 \nBB = RM3
+
+  I1 -d-> I2
+  I2 -d-> I3
+  I3 -d-> I4
+  I4 -d-> I5
+  I5 -d-> I6
+  I6 -d-> I7
+  I7 -d-> I8
+}
+
+state P as "Penerangan" {
+  state P1 as "P-1/TR 450 VA"
+  state P2 as "P-1/TR 900 VA"
+  state P3 as "P-1/TR 1300 VA"
+  state P4 as "P-1/TR 2200 VA"
+  state P5 as "P-1/TR 6500 VA"
+  state P6 as "P-2/TM >200 KVA"
+  state P7 as "P-3/TR"
+
+  P1 : PB = 685 \nBP = 575 \nBB = 20000
+  P2 : PB = 760 \nBP = 600 \nBB = 24600
+  P3 : PB = 961 \nBP = 961 \nBB = RM1
+  P4 : PB = 976 \nBP = 976  \nBB = RM1
+  P5 : PB = 1265 \nBP = 1380 \nBB = RM2
+  P6 : PB = - \nBP = 913 \nBB = RM3
+  P7 : PB = 904 \nBP = 904 \nBB = RM2
+
+  P1 -d-> P2
+  P2 -d-> P3
+  P3 -d-> P4
+  P4 -d-> P5
+  P5 -d-> P6
+  P6 -d-> P7
+}
+
+state T as "Traksi" {
+  state TRA as "T/TM >200 KVA"
+  TRA : PB = 725 \nBB = 27825
+}
+
+state C as "Curah" {
+  state CUR as "C/TM >200 KVA"
+  CUR : PB = 642 \nBB = RM1
+}
+
+state L as "Layanan Khusus" {
+  state LAK as "L/TR,TM,TT"
+  LAK : PB = 1550
+}
+
+[*] -d-> PRE
+PRE -> S
+S -> R
+R -> B
+B -> I
+I -> P
+P -> T
+T -> C
+C -> L
+L -d-> [*]
+
+note left of PRE
+  WH & VA
+  KWH = WH / 1000
+  KVA = VA / 1000
+  JN = KWH / KVA
+  RM1 = JN * KVA * BP
+  RM2 = JN * KVA * BP
+  RM3 = JN * KVA * BP
+end note
+
+@enduml

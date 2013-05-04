@@ -1,0 +1,29 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMenutup Dokumen\n
+
+start
+
+:Memilih menu "Berkas";
+:Memilih menu "Tutup Dokumen";
+
+if (Ada dokumen aktif?) then (Ya)
+  :<Mengecek kondisi perubahan>;
+else (Tidak)
+endif
+
+:Menutup dokumen;
+
+if (Ada dokumen aktif lain?) then (Ya)
+  :Menampilkan dokumen lain tersebut;
+else (Tidak)
+  :Tidak menampilkan apa-apa;
+endif
+
+:Kembali ke dasbor;
+
+stop
+
+@enduml

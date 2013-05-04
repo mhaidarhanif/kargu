@@ -1,0 +1,15 @@
+@startuml
+
+skinparam shadowing false
+
+skinparam activity {
+	FontName Courier
+	BackgroundColor LightCyan
+	BorderColor DarkCyan
+	ArrowColor DarkCyan
+	StartColor DarkCyan
+	BarColor DarkGray
+	EndColor DarkCyan
+}
+
+@enduml

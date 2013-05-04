@@ -1,0 +1,28 @@
+@startuml
+
+!include kargu_use-case.iuml
+
+title <b>Kargu</b> | Diagram Kasus Penggunaan\nKoneksi Aplikasi\n
+
+Developer << Human >> as "Pengembang"
+User << Human >> as "Pengguna"
+Database << System >> as "Basis Data\n(SQLite)"
+DefaultSource << Data >> as "Sumber Umum"
+CustomSource << Data >> as "Sumber Buatan"
+
+(Start) << Application >> as "Memulai"
+(Use) << Application >> as "Menggunakan"
+(File) << Data >> as "Menyimpan"
+
+Developer --|> User : "Termasuk"
+Developer -|> DefaultSource : "Membuat"
+DefaultSource -|> Database : "Berbentuk"
+CustomSource --|> Database : "Berbentuk"
+User -|> CustomSource : "Membuat"
+
+Database --> (Use)
+Database ---> (File)
+User --> (Start)
+User --> (Use)
+
+@enduml

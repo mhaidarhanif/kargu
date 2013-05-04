@@ -1,0 +1,17 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMemilih Golongan Tarif\n
+
+start
+
+:Memilih salah satu nama dari boks kumpulan "Golongan Tarif";
+:Nama golongan tarif dibaca dan disimpan;
+:Nama golongan tarif dicocokkan dengan\nboks kumpulan nilai batas dayanya;
+:Boks kumpulan nilai "Batas Daya" diganti;
+:<Menset batas daya>;
+
+stop
+
+@enduml

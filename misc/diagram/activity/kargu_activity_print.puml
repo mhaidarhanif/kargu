@@ -1,0 +1,21 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMencetak\n
+
+start
+
+:Menawarkan tujuan cetak;
+
+fork
+  :Sistem;
+fork again
+  :Boks dialog;
+fork again
+  :Lainnya;
+end fork
+
+stop
+
+@enduml

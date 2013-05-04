@@ -1,0 +1,19 @@
+@startuml
+
+!include kargu_activity.iuml
+
+title <b>Kargu</b> | Diagram Aktivitas\nMengurutkan Entri\n
+
+start
+
+:<Mengecek adanya entri>;
+
+if (Ada entri) then (Ya)
+  :Memilih salah satu jenis <i>record</i>;
+  :<Mengurutkan berdasarkan jenis <i>record</i>>;
+else (Tidak)
+endif
+
+stop
+
+@enduml
