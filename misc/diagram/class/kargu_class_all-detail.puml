@@ -4,7 +4,7 @@
 
 title <b>Kargu</b> | Diagram Kelas\nEntitas & Hubungan Antar Objek (Detail)\n
 
-class KarguApp {
+class KarguDesktopApp {
   -db: Database
   -control: Controller
   +quitApp(): void
@@ -192,8 +192,8 @@ enum TimeUnit {
   SECONDS = <60
 }
 
-KarguApp *-- "1" Controller
-KarguApp *-- "1" Database
+KarguDesktopApp *-- "1" Controller
+KarguDesktopApp *-- "1" Database
 
 Controller ..> InputForm
 Controller o-- Database
@@ -201,7 +201,7 @@ Controller o-- Database
 Controller *-- "1" KarguGUI
 Controller *-- "1" KarguCLI
 
-TimeUnit .r.> Document
+Document .l.> TimeUnit
 Controller ..> Document
 Database ..> Document : manages >
 KarguGUI -- "1" Document : displays >

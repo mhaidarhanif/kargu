@@ -2,7 +2,7 @@ Kargu
 =====
 
 
-Dokumentasi Kargu (lang=id-ID)
+Dokumentasi Kargu (`lang=id-ID`)
 
 Edisi aplikasi Java _desktop_ dan [Android](http://android.com)
 
@@ -20,11 +20,15 @@ Diagram     = ./diagram/*/kargu_*.uxf & kargu_*.png
 Tampilan    = ./screen/kargu_x.x_screen-*.png
 Berkas APK  = ./bin/Kargu_x.x.apk | ./target/kargu.apk
 Kategori    = Energi, Perkakas, Edukasi, Referensi, Budaya
+Target      = Pelanggan PLN yang ingin tahu
 ```
 
 
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 
+
+Hal Utama
+---------
 
 ### Informasi Terkait
 
@@ -51,8 +55,8 @@ Harap menggunakan bahasa Inggris untuk pesan perubahan / _commit message_ agar l
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 
 
-Kata-Kata Lain
---------------
+Hal Lain
+--------
 
 ### Lisensi
 
