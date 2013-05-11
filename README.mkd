@@ -20,6 +20,7 @@ Diagram     = ./diagram/*/kargu_*.uxf & kargu_*.png
 Tampilan    = ./screen/kargu_x.x_screen-*.png
 Berkas APK  = ./bin/Kargu_x.x.apk | ./target/kargu.apk
 Kategori    = Energi, Perkakas, Edukasi, Referensi, Budaya
+Target      = Pelanggan PLN yang ingin tahu
 ```
 
 
