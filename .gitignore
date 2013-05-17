@@ -1,5 +1,6 @@
 # Custom personal files
 misc/
+out/
 tmp/
 *.swp
 *.jar
