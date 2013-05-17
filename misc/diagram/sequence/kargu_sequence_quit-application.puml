@@ -1,0 +1,13 @@
+@startuml
+
+!include kargu_sequence.iuml
+
+title <b>Kargu</b> | Diagram Urutan\nMemberhentikan Aplikasi\n
+
+participant KarguDesktopApp as KDA
+participant KarguDesktopGUI as KDG
+
+KDA <- KDG : quit()
+
+@enduml
+

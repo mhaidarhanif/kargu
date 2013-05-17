@@ -7,6 +7,19 @@ skinparam sequence {
 	BackgroundColor LightCyan
 	BorderColor DarkCyan
 	ArrowColor DarkCyan
+
+	ActorBackgroundColor LightCyan
+	ActorBorderColor DarkCyan
+	ActorFontColor DarkCyan
+	ActorFontName Courier
+
+	ParticipantBorderColor DarkCyan
+	ParticipantBackgroundColor LightCyan
+	ParticipantFontName Courier
+
+	LifeLineBorderColor DarkCyan
+	LifeLineBackgroundColor LightCyan
 }
 
 @enduml
+

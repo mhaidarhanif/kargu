@@ -1,0 +1,23 @@
+@startuml
+
+!include kargu_sequence.iuml
+
+title <b>Kargu</b> | Diagram Urutan\nMenambah Entri\n
+
+participant KarguDesktopGUI as KDG
+participant Controller as C
+participant FormInput as FI
+participant Document as D
+participant Entry as E
+
+KDG -> C : doAdd()
+C -> FI : showFormInputDialog()
+C <-- FI
+KDG <- C : getDocument()
+KDG --> C
+
+C -> D : addEntry()
+D -> E : <<create>>
+D -> D : setChanged()
+
+@enduml

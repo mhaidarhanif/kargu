@@ -1,9 +1,0 @@
-@startuml
-
-!include kargu_sequence.iuml
-
-title <b>Kargu</b> | Diagram Sekuensi\nMembuat Dokumen Baru\n
-
-
-
-@enduml

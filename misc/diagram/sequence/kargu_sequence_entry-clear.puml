@@ -1,0 +1,25 @@
+@startuml
+
+!include kargu_sequence.iuml
+
+title <b>Kargu</b> | Diagram Urutan\nMengosongkan Entri\n
+
+participant KarguDesktopGUI as KDG
+participant Controller as C
+participant JOptionPane as JOP
+participant Document as D
+participant Entry as E
+
+KDG -> C : doClear()
+KDG <- C : getDocument()
+KDG --> C
+
+C -> JOP : showConfirmDialog()
+C <-- JOP
+
+alt confirmed
+  C -> D : clearEntry()
+  D -> D : setChanged()
+end
+
+@enduml

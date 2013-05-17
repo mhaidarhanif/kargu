@@ -5,11 +5,12 @@
 title <b>Kargu</b> | Diagram Kelas\nEntitas & Hubungan Antar Objek\n
 
 class KarguDesktopApp
-class KarguGUI
-class KarguCLI
+class KarguDesktopGUI
+class KarguDesktopCLI
 class Controller
 class Database
-class InputForm 
+class FormInput
+class FormOutput
 class Document
 class Page
 class Entry
@@ -18,18 +19,21 @@ enum TimeUnit
 KarguDesktopApp *-- "1" Controller
 KarguDesktopApp *-- "1" Database
 
-Controller ..> InputForm
+Controller .u.> FormInput
+Controller .u.> FormOutput
 Controller o-- Database
 
-Controller *-- "1" KarguGUI
-Controller *-- "1" KarguCLI
+Controller *-l- "1" KarguDesktopGUI
+Controller *-- "1" KarguDesktopCLI
 
 Document .l.> TimeUnit
 Controller ..> Document
 Database ..> Document : manages >
-KarguGUI -- "1" Document : displays >
+KarguDesktopGUI -- "1" Document : displays >
 
 Document "1" o-- "1..*" Page : contains >
 Page "1" o-- "*" Entry : contains >
+
+hide members
 
 @enduml

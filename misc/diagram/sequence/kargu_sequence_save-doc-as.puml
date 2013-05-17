@@ -1,0 +1,20 @@
+@startuml
+
+!include kargu_sequence.iuml
+
+title <b>Kargu</b> | Diagram Urutan\nMenyimpan Dokumen Sebagai\n
+
+participant KarguDesktopGUI as KDG
+participant Controller as C
+participant Document as D
+participant Database as DB
+
+KDG -> C : doSave()
+KDG <- C : getDocument()
+KDG --> C : getDocument()
+C -> D : getFile()
+C <-- D
+C -> C : doSaveAs()
+
+@enduml
+

@@ -1,0 +1,20 @@
+@startuml
+
+!include kargu_sequence.iuml
+
+title <b>Kargu</b> | Diagram Urutan\nMenawarkan Penyimpanan Perubahan\n
+
+participant KarguDesktopGUI as KDG
+participant Controller as C
+participant JOptionPane as JOP
+
+KDG -> C : doOfferSaveChanges()
+C -> JOP : showConfirmDialog()
+C <-- JOP
+
+alt Memilih Ya
+  C -> C : doSave()
+end
+
+@enduml
+

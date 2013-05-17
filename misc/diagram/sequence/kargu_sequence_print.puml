@@ -1,0 +1,36 @@
+@startuml
+
+!include kargu_sequence.iuml
+
+title <b>Kargu</b> | Diagram Urutan\nMencetak\n
+
+participant KarguDesktopGUI as KDG
+participant Controller as C
+participant Document as D
+participant Entry as E
+
+KDG -> C : doPrint()
+KDG <- C : getDocument()
+KDG --> C
+C -> D : print()
+
+alt untuk tiap entri
+  D -> E : getID()
+  D <-- E
+  D -> E : getName()
+  D <-- E
+  D -> E : getType()
+  D <-- E
+  D -> E : getQty()
+  D <-- E
+  D -> E : getWatt()
+  D <-- E
+  D -> E : getHour()
+  D <-- E
+end
+
+D -> D : printSystem()
+D -> D : printFrame()
+
+@enduml
+

@@ -160,9 +160,9 @@ note left of PRE
   KWH = WH / 1000
   KVA = VA / 1000
   JN = KWH / KVA
-  RM1 = JN * KVA * BP
-  RM2 = JN * KVA * BP
-  RM3 = JN * KVA * BP
+  RM1 = JN * KVA * BP1
+  RM2 = JN * KVA * BP2
+  RM3 = JN * KVA * BP3
 end note
 
 @enduml

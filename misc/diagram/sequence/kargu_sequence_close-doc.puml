@@ -1,0 +1,10 @@
+@startuml
+
+!include kargu_sequence.iuml
+
+title <b>Kargu</b> | Diagram Urutan\nMenutup Dokumen\n
+
+
+
+@enduml
+

@@ -1,0 +1,36 @@
+@startuml
+
+!include kargu_sequence.iuml
+
+title <b>Kargu</b> | Diagram Urutan\nMembuka Dokumen\n
+
+participant KarguDesktopGUI as KDG
+participant Controller as C
+participant Document as D
+participant JFileChooser as JFC
+participant Database as DB
+
+KDG -> D : getChanged()
+KDG <-- D
+
+alt berubah
+  KDG -> C : doOfferSaveChanges()
+end
+
+KDG -> C : doOpen()
+C -> JFC : <<create>>
+C -> JFC : showOpenDialog()
+C <-- JFC
+
+alt disetujui
+  C -> JFC : getSelectedFile()
+  C <-- JFC
+  C -> DB : readFile()
+  D <- DB : setChanged()
+  D <- DB : setFile()
+end
+
+KDG <- C : setDocument()
+
+@enduml
+

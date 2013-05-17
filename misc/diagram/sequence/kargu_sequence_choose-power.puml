@@ -1,0 +1,12 @@
+@startuml
+
+!include kargu_sequence.iuml
+
+title <b>Kargu</b> | Diagram Urutan\nMemilih Batas Daya\n
+
+participant KarguDesktopGUI as KDG
+
+KDG -> KDG : powerField.getText()
+
+@enduml
+

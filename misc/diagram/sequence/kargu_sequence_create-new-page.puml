@@ -1,0 +1,24 @@
+@startuml
+
+!include kargu_sequence.iuml
+
+title <b>Kargu</b> | Diagram Urutan\nMembuat Laman Baru\n
+
+participant KarguDesktopGUI as KDG
+participant Controller as C
+participant Document as D
+participant Page as P
+
+KDG -> D : getChanged()
+KDG <-- D
+
+alt Dokumen berubah
+  KDG -> C : doOfferSaveChanges()
+end
+
+KDG -> C : doNewPage()
+C -> P : <<create>>
+KDG <- C : setPage()
+
+@enduml
+

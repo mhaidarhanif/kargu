@@ -1,0 +1,12 @@
+@startuml
+
+!include kargu_sequence.iuml
+
+title <b>Kargu</b> | Diagram Urutan\nMemilih Golongan Tarif\n
+
+participant KarguDesktopGUI as KDG
+
+KDG -> KDG : groupBox.getSelectedItem()
+
+@enduml
+

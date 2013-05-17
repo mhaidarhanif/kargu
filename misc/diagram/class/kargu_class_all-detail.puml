@@ -7,138 +7,171 @@ title <b>Kargu</b> | Diagram Kelas\nEntitas & Hubungan Antar Objek (Detail)\n
 class KarguDesktopApp {
   -db: Database
   -control: Controller
-  +quitApp(): void
-  +main(String args[]): void
+  +main(String[] args): void
+  +quit(): void
 }
 
-class KarguGUI {
-  -control: Controller
-  -document: Document
-  -entryListModel: AbstractTableModel
-  -entryList: JTable
-
+class KarguDesktopGUI {
   -menuBar: JMenuBar
+  -fileMenu, dataMenu, helpMenu: JMenu
+  -newDocumentItem, newPageItem, openDocumentItem, saveDocumentItem, saveDocumentAsItem, printDocumentItem, closeDocumentItem, closePageItem, quitAppItem: JMenuItem
+  -addEntryItem, editEntryItem, deleteEntryItem, clearEntryItem, resultCompleteItem, resultShortItem: JMenuItem
+  -manualItem, aboutItem: JMenuItem
+  -controlPanel, managePanel, settingsPanel, entryPanel, resultPanel, versionPanel: JPanel
+  -tabbedPage: JTabbedPane
+  -entriesTable: JScrollPane
+  -settingsLabel, groupLabel, powerLabel, entryLabel, resultLabel, versionLabel: JLabel
+  -groupBox: JComboBox
+  -groups = { "S1", "S2", "S3", "R1", "R2", "R3" }: String[]
+  -powerField: JTextField
+  -addEntryButton, editEntryButton, deleteEntryButton, clearEntryButton, resultCompleteButton, resultShortButton, newPageButton: JButton
+  -nameListModel: NameListModel
+  -nameList: JList
+  -controller: Controller
+  -document: Document
+  -groupRate: Object
+  -powerLimit: int
 
-  -fileMenu: JMenu
-  -newDocumentItem: JMenuItem
-  -newPageItem: JMenuItem
-  -openDocumentItem: JMenuItem
-  -saveDocumentItem: JMenuItem
-  -saveDocumentAsItem: JMenuItem
-  -printDocumentItem: JMenuItem
-  -closeDocumentItem: JMenuItem
-  -closePageItem: JMenuItem
-  -quitAppItem: JMenuItem
-  
-  -dataMenu: JMenu
-  -addEntryItem: JMenuItem
-  -editEntryItem: JMenuItem
-  -deleteEntryItem: JMenuItem
-  -clearEntryItem: JMenuItem
-  -resultCompleteItem: JMenuItem
-  -resultShortItem: JMenuItem
-  
-  -helpMenu: JMenu
-  -manualItem: JMenuItem
-  -aboutItem: JMenuItem
-
-  -settingsLabel: JLabel
-  -classLabel: JLabel
-  -classChoose: JComboBox    
-  -powerLabel: JLabel
-  -powerBox: JTextBox
-
-  -entryLabel: JLabel
-  -addEntryButton: JButton
-  -editEntryButton: JButton
-  -deleteEntryButton: JButton
-  -clearEntryButton: JButton
-
-  -resultLabel: JLabel
-  -resultCompleteButton: JButton
-  -resultShortButton: JButton
-
-  +KarguGUI(final Controller control, Document document, Page page): constructor
-  +setDocument(Document document): void
+  +KarguDesktopGUI(final Controller controller, final Document document): Constructor
   +getDocument(): Document
-  +result(String out): void
+  +setDocument(Document document): void
   +reportError(String message): void
   +update(Observable o, Object arg): void
-
-  ~powerChooseActionPerformed(ActionEvent evt): void
-  ~newPageActionPerformed(ActionEvent evt): void
-  ~addEntryActionPerformed(ActionEvent evt): void
-  ~editEntryActionPerformed(ActionEvent evt): void
-  ~deleteEntryActionPerformed(ActionEvent evt): void
-  ~clearEntryActionPerformed(ActionEvent evt): void
-  ~resultCompleteActionPerformed(ActionEvent evt): void
-  ~resultShortActionPerformed(ActionEvent evt): void
+  +getSelectedButtonText(ButtonGroup buttonGroup): String
 }
 
-class KarguCLI {
+class KarguDesktopCLI {
   -control: Controller
   -document: Document
-  -entryListModel:
-  -entryList:
+  -entryTableModel:
+  -entryTable:
 }
 
 class Controller {
   -db: Database
 
-  +Controller(Database db): ctor
-  +doAdd(KarguGUI gui): void
-  +doEdit(KarguGUI gui, String id): void
-  +doDelete(KarguGUI gui, String id): void
-  +doClear(KarguGUI gui, String id): void
-  +doPrint(KarguGUI gui): void
-  +doNew(KarguGUI gui): void
-  +doOpen(KarguGUI gui): void
-  +doSave(KarguGUI gui): void
-  +doSaveAs(KarguGUI gui): void
-  +doOfferSaveChanges(KarguGUI gui): void
+  +Controller(Database db): Constructor
+  +doNewDocument(KarguDesktopGUI gui): void
+  +doNewPage(KarguDesktopGUI gui): void
+  +doOpenDocument(KarguDesktopGUI gui): void
+  +doSaveDocument(KarguDesktopGUI gui): void
+  +doSaveDocumentAs(KarguDesktopGUI gui): void
+  +doOfferSaveChanges(KarguDesktopGUI gui): void
+  +doPrint(KarguDesktopGUI gui): void
+  +doAdd(KarguDesktopGUI gui): void
+  +doEdit(KarguDesktopGUI gui, int index): void
+  +doDelete(KarguDesktopGUI gui, int id): void
+  +doClear(KarguDesktopGUI gui, int num): void
+  +doResultComplete(KarguDesktopGUI gui, Object group, int power): void
+  +doResultShort(KarguDesktopGUI gui, Object group, int power): void
+  +doTest(KarguDesktopGUI gui): void
 }
 
 class Database {
-  +readFile(File file): Document
-  +saveFile(Document document, File file): void
-  +showInputForm(Component parent, String[] prompts, String[] init, String title): String
-  ~inputForm(String[] prompts, String[] init)
+  +readFile(File doc): Document
+  +saveFile(Document book, File doc): void
 }
 
-class InputForm {
+class FormInput {
+  -fields: JTextField[]
+  -ok: boolean
+
+  +FormInput(String[] prompts, String[] initialValues): Constructor
+  +showFormInputDialog(Component parentComponent, String[] prompts, String[] initialValues, String title): String[]
+  +showFormInputDialog(Component parentComponent, String[] prompts, String title): String[]
+  +showFormInputDialog(Component parentComponent, String[] prompts, String[] initialValues): String[]
+  +showFormInputDialog(Component parentComponent, String[] prompts): String[]
+}
+
+class FormOutput {
 
 }
 
 class Document {
-  -collection: Entry[] or Vector
+  -collection: Vector
   -file: File
-  -changed: boolean
-  -title: String
-  -class: String
-  -power: int
-  -result: String
+  -changedSinceLastSave: boolean
+  -output: String
+  -groupRate: String
+  -VA: float
+  -KVA: float
+  -numEntries: int
+  -WH: float
+  -dailyWH: float
+  -dailyKWH: float
+  -monthlyKWH: float
+  -activeHour: float
+  -subscriptionCost: int
+  -usageFeePrepaid: int
+  -usageFeePostpaid: int
+  -burdenCost: float
+  -minAccount: float
+  -monthlyCostWithoutTaxPrepaid: float
+  -monthlyCostWithoutTaxPostpaid: float
+  -monthlyTax: float
+  -monthlyCostPrepaid: float
+  -monthlyCostPostpaid: float
 
-  +Document(): constructor
-  +Document(String title, String class, String power, boolean changed): constructor
-
-  +setFile(File file): void
+  +Document(): Constructor
+  -resetResult(): void
+  +setGroupRate(Object group): void
+  +setVA(int power): void
+  +setKVA(): void
+  +setNumberOfEntries(): void
+  +setWH(): void
+  +setDailyWH(): void
+  +setDailyKWH(): void
+  +setMonthlyKWH(): void
+  +setDocumentGroup(): void
+  +setActiveHour(): void
+  +setMinAccount(): void
+  +setSubscriptionCost(int num): void
+  +setUsageFeePrepaid(int num): void
+  +setUsageFeePostpaid(int num): void
+  +setBurdenCost(float num): void
+  +setMonthlyCostWithoutTaxPrepaid(): void
+  +setMonthlyCostWithoutTaxPostpaid(): void
+  +setMonthlyTax(): void
+  +setMonthlyCostPrepaid(): void
+  +setMonthlyCostPostpaid(): void
+  +getGroupRate(): String
+  +getVA(): float
+  +getKVA(): float
+  +getNumberOfEntries(): int
+  +getWH(): float
+  +getDailyWH(): float
+  +getDailyKWH(): float
+  +getMonthlyKWH(): float
+  +getActiveHour(): float
+  +getSubscriptionCost(): int
+  +getUsageFeePrepaid(): int
+  +getUsageFeePostpaid(): int
+  +getBurdenCost(): float
+  +getMinAccount(): float
+  +getMonthlyCostWithoutTaxPrepaid(): float
+  +getMonthlyCostWithoutTaxPostpaid(): float
+  +getMonthlyTax(): float
+  +getMonthlyCostPrepaid(): float
+  +getMonthlyCostPostpaid(): float
+  +addEntry(int id, String name, String type, int qty, float watt, float hour): void
+  +getNameOfEntry(int id): String
+  +getEntryCompleteInfo(int id): String
+  +getEntryInfo(int id): String[]
+  +editEntry(int id, String name, String type, int qty, float watt, float hour): void
+  +removeEntry(int id): void
+  +clearEntry(): void
+  +getEntriesAll(): void
+  +printSystem(): void
+  +printFrame(): void
   +getFile(): File
-  
-  +setTitle(String title): String
+  +setFile(File doc): void
   +getTitle(): String
-  
-  +setClass(): String
-  +getClass(): String
-  
-  +setPower(): int
-  +getPower(): int
-
+  +getChangedSinceLastSave(): boolean
   +setChanged(boolean changed): void
-  +getChanged(): boolean
-
-  +editDocument(String title, String class, String power, boolean changed): void
-
-  ~setupTest(): void  
+  +calculateResult(Object group, int power): void
+  +displayResultComplete(): void
+  +displayResultShort(): void
+  +setupTest(): void
 }
 
 class Page {
@@ -164,24 +197,22 @@ class Page {
 }
 
 class Entry {
-  -id: String
+  -id: int
   -name: String
   -type: String
   -qty: int
-  -watt: Float
-  -hour: Float
+  -watt: float
+  -hour: float
 
-  +Entry(): constructor
-  +Entry(String id, String name, String type, int qty, Float watt, Float hour): constructor
-
-  +getID(): String
+  +Entry(): Constructor
+  +Entry(int id, String name, String type, int qty, float watt, float hour): ctor
+  +getID(): int
   +getName(): String
   +getType(): String
   +getQty(): int
-  +getWatt(): int
-  +getHour(): int
-
-  +update(String id, String name, String type, int qty, Float watt, Float hour): void
+  +getWatt(): float
+  +getHour(): float
+  +update(String name, String type, int qty, float watt, float hour): void
 }
 
 enum TimeUnit {
@@ -195,16 +226,17 @@ enum TimeUnit {
 KarguDesktopApp *-- "1" Controller
 KarguDesktopApp *-- "1" Database
 
-Controller ..> InputForm
+Controller ..> FormInput
+Controller ..> FormOutput
 Controller o-- Database
 
-Controller *-- "1" KarguGUI
-Controller *-- "1" KarguCLI
+Controller *-- "1" KarguDesktopGUI
+Controller *-- "1" KarguDesktopCLI
 
 Document .l.> TimeUnit
 Controller ..> Document
 Database ..> Document : manages >
-KarguGUI -- "1" Document : displays >
+KarguDesktopGUI -- "1" Document : displays >
 
 Document "1" o-- "1..*" Page : contains >
 Page "1" o-- "*" Entry : contains >

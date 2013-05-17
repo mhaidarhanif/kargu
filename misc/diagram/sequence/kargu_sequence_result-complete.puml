@@ -1,0 +1,44 @@
+@startuml
+
+!include kargu_sequence.iuml
+
+title <b>Kargu</b> | Diagram Urutan\nMelihat Hasil Lengkap\n
+
+participant KarguDesktopGUI as KDG
+participant Controller as C
+participant JOptionPane as JOP
+participant Document as D
+
+KDG -> C : doResultComplete()
+KDG <- C : getDocument()
+KDG --> C
+
+C -> D : calculateResult()
+alt menghitung hasil
+  D -> D : resetResult()
+  D -> D : setGroupRate(group);
+  D -> D : setVA(power);
+  D -> D : setKVA()
+  D -> D : setNumberOfEntries()
+  D -> D : setDailyWH()
+  D -> D : setWH()
+  D -> D : setDailyKWH()
+  D -> D : setMonthlyKWH()
+  D -> D : setActiveHour()
+  D -> D : setMinAccount()
+  D -> D : setDocumentGroup()
+  D -> D : setMonthlyCostWithoutTaxPrepaid()
+  D -> D : setMonthlyCostWithoutTaxPostpaid()
+  D -> D : setMonthlyTax()
+  D -> D : setMonthlyCostPrepaid()
+  D -> D : setMonthlyCostPostpaid()
+end
+
+C -> D : displayResultComplete()
+D --> D : output
+C -> D : printSystem()
+C -> D : printFrame()
+JOP <- D : showMessageDialog()
+
+@enduml
+
