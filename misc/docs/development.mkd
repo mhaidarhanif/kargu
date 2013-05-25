@@ -1,14 +1,12 @@
-Kargu
-=====
+# Kargu
 
-Name
-----
+## Name
 
-Kargu Listrik
-かるぐ | カルグ : エレキテル | 電気 (Denki)
+- Kargu Listrik
+- Electric Kargu
+- かるぐ | カルグ : エレキテル | 電気 (Denki)
 
-Identity
---------
+## Identity
 
 Color:
 - Black
@@ -27,8 +25,7 @@ Style:
 
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 
-Resources
----------
+## Resources
 
 Images
 
@@ -36,8 +33,7 @@ Sound
 
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 
-Information
------------
+## Information
 
 ### Development
 
@@ -109,4 +105,3 @@ Information
 - http://holoeverywhere.com
 - http://mycolorscreen.com
 - https://saucelabs.com
-
