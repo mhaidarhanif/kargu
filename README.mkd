@@ -1,12 +1,9 @@
-Kargu
-=====
-
+# [![Logo Kargu](https://raw.github.com/mhaidarh/kargu/develop/assets/logo/kargu_logo_text-hor_small.png)](https://github.com/mhaidarh/kargu "Logo Kargu Berwarna")
 
 Dokumentasi Kargu (`lang=id-ID`)
 
 Edisi aplikasi Java _desktop_ dan [Android](http://android.com)
 
-[![Logo Kargu](https://raw.github.com/mhaidarh/kargu/develop/assets/logo/kargu_logo_text-hor_small.png)](https://github.com/mhaidarh/kargu "Logo Kargu Berwarna")
 [![Status Buat](https://secure.travis-ci.org/mhaidarh/kargu.png)](http://travis-ci.org/mhaidarh/kargu/ "Status pembuatan dari Travis CI")
 
 ```
